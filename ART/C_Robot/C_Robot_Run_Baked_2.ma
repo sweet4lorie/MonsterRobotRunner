@@ -1,6 +1,6 @@
 //Maya ASCII 2015 scene
-//Name: C_Robot_Run.ma
-//Last modified: Wed, Nov 12, 2014 07:13:20 PM
+//Name: C_Robot_Run_Baked_2.ma
+//Last modified: Wed, Nov 12, 2014 06:15:56 PM
 //Codeset: UTF-8
 file -rdi 1 -ns "C_Robot_Rig" -rfn "C_Robot_RigRN" -op "v=0;" "/Users/Emi-Bear/Desktop/MonsterRobotRunner/ART/C_Robot/C_Robot_Rig.ma";
 file -r -ns "C_Robot_Rig" -dr 1 -rfn "C_Robot_RigRN" -op "v=0;" "/Users/Emi-Bear/Desktop/MonsterRobotRunner/ART/C_Robot/C_Robot_Rig.ma";
@@ -16,14 +16,14 @@ fileInfo "osv" "Mac OS X 10.9.5";
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 57.441106103697223 -0.65994184676490497 -9.0859086606689452 ;
-	setAttr ".r" -type "double3" 7.2000000000003919 -259.59999999999809 0 ;
+	setAttr ".t" -type "double3" -18.33687003441182 7.0534128600275343 -6.7071699325378491 ;
+	setAttr ".r" -type "double3" -4.2000000000012658 -100.79999999999963 0 ;
 	setAttr ".rp" -type "double3" 0 4.4408920985006262e-16 0 ;
 	setAttr ".rpt" -type "double3" -1.6485040534808017e-16 -3.2011027817205036e-16 -1.5411003564579974e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 60.971376276410538;
+	setAttr ".coi" 16.456463067073059;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -342,7 +342,7 @@ createNode reference -n "C_Robot_RigRN";
 	setAttr ".phl[204]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"C_Robot_RigRN"
-		"C_Robot_RigRN" 25
+		"C_Robot_RigRN" 24
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:L_knee" "translate" 
 		" -type \"double3\" 0.89754361429717999 0 5.00565334778880455"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:L_knee" "translateZ" 
@@ -367,8 +367,6 @@ createNode reference -n "C_Robot_RigRN";
 		" -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:R_knee" "rotateZ" 
 		" -av"
-		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim" "GlobalScale" " -av -k 1 1"
-		
 		5 4 "C_Robot_RigRN" "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:L_knee.translateZ" 
 		"C_Robot_RigRN.placeHolderList[91]" ""
 		5 4 "C_Robot_RigRN" "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:L_knee.translateX" 
@@ -393,68 +391,22 @@ createNode reference -n "C_Robot_RigRN";
 		"C_Robot_RigRN.placeHolderList[101]" ""
 		5 4 "C_Robot_RigRN" "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:R_knee.rotateZ" 
 		"C_Robot_RigRN.placeHolderList[102]" ""
-		"C_Robot_RigRN" 267
-		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:L_foot_joint_group" "translate" 
-		" -type \"double3\" -0.19521138713346309 1.11349293161067653 -3.82126104871009442"
-		
-		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:L_foot_joint_group" "translateX" 
-		" -av"
-		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:L_foot_joint_group" "translateY" 
-		" -av"
-		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:L_foot_joint_group" "translateZ" 
-		" -av"
-		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:L_foot_joint_group" "rotate" " -type \"double3\" -108.00000429153440962 7.50886510548488673 0"
-		
-		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:L_foot_joint_group" "rotateX" " -av"
-		
-		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:L_foot_joint_group" "rotateY" " -av"
-		
-		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:L_foot_joint_group" "rotateZ" " -av"
-		
-		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:R_foot_joint_group" "translate" 
-		" -type \"double3\" 1.28600053895582711 12.71146465891390243 -6.2595354349040484"
-		
-		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:R_foot_joint_group" "translateX" 
-		" -av"
-		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:R_foot_joint_group" "translateY" 
-		" -av"
-		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:R_foot_joint_group" "translateZ" 
-		" -av"
-		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:R_foot_joint_group|C_Robot_Rig:R_heel_joint" 
-		"rotate" " -type \"double3\" -61.20000152042295838 0 0"
-		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:R_foot_joint_group|C_Robot_Rig:R_heel_joint" 
-		"rotateX" " -av"
-		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:root_joint_group|C_Robot_Rig:root_joint|C_Robot_Rig:torso_joint|C_Robot_Rig:chest_joint|C_Robot_Rig:L_clavicle_joint" 
-		"rotate" " -type \"double3\" 179.69349629242273636 -0.63244950575152425 86.33812853662077202"
-		
-		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:root_joint_group|C_Robot_Rig:root_joint|C_Robot_Rig:torso_joint|C_Robot_Rig:chest_joint|C_Robot_Rig:L_clavicle_joint" 
-		"rotateX" " -av"
-		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:root_joint_group|C_Robot_Rig:root_joint|C_Robot_Rig:torso_joint|C_Robot_Rig:chest_joint|C_Robot_Rig:L_clavicle_joint" 
-		"rotateY" " -av"
-		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:root_joint_group|C_Robot_Rig:root_joint|C_Robot_Rig:torso_joint|C_Robot_Rig:chest_joint|C_Robot_Rig:L_clavicle_joint" 
-		"rotateZ" " -av"
-		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:root_joint_group|C_Robot_Rig:root_joint|C_Robot_Rig:torso_joint|C_Robot_Rig:chest_joint|C_Robot_Rig:L_clavicle_joint" 
+		"C_Robot_RigRN" 245
+		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:joint_group|C_Robot_Rig:root_joint_group|C_Robot_Rig:root_joint|C_Robot_Rig:torso_joint_group|C_Robot_Rig:torso_joint|C_Robot_Rig:chest_joint_group|C_Robot_Rig:chest_joint|C_Robot_Rig:L_clavicle_joint_group|C_Robot_Rig:L_clavicle_joint" 
+		"rotate" " -type \"double3\" 179.99048206231731228 0 89.44602637569073522"
+		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:joint_group|C_Robot_Rig:root_joint_group|C_Robot_Rig:root_joint|C_Robot_Rig:torso_joint_group|C_Robot_Rig:torso_joint|C_Robot_Rig:chest_joint_group|C_Robot_Rig:chest_joint|C_Robot_Rig:L_clavicle_joint_group|C_Robot_Rig:L_clavicle_joint" 
 		"segmentScaleCompensate" " 1"
-		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:root_joint_group|C_Robot_Rig:root_joint|C_Robot_Rig:torso_joint|C_Robot_Rig:chest_joint|C_Robot_Rig:R_clavicle_joint|C_Robot_Rig:R_shoulder_joint" 
-		"rotate" " -type \"double3\" 353.95061757713983752 83.07952194494103537 340.69355743734018915"
+		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:joint_group|C_Robot_Rig:root_joint_group|C_Robot_Rig:root_joint|C_Robot_Rig:torso_joint_group|C_Robot_Rig:torso_joint|C_Robot_Rig:chest_joint_group|C_Robot_Rig:chest_joint|C_Robot_Rig:R_clavicle_joint_group|C_Robot_Rig:R_clavicle_joint|C_Robot_Rig:R_shoulder_joint_group|C_Robot_Rig:R_shoulder_joint" 
+		"rotate" " -type \"double3\" 89.64093238402446673 0.98442862658361674 0.00016354873877395804"
 		
-		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:root_joint_group|C_Robot_Rig:root_joint|C_Robot_Rig:torso_joint|C_Robot_Rig:chest_joint|C_Robot_Rig:R_clavicle_joint|C_Robot_Rig:R_shoulder_joint" 
-		"rotateX" " -av"
-		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:root_joint_group|C_Robot_Rig:root_joint|C_Robot_Rig:torso_joint|C_Robot_Rig:chest_joint|C_Robot_Rig:R_clavicle_joint|C_Robot_Rig:R_shoulder_joint" 
-		"rotateY" " -av"
-		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:root_joint_group|C_Robot_Rig:root_joint|C_Robot_Rig:torso_joint|C_Robot_Rig:chest_joint|C_Robot_Rig:R_clavicle_joint|C_Robot_Rig:R_shoulder_joint" 
-		"rotateZ" " -av"
-		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:root_joint_group|C_Robot_Rig:root_joint|C_Robot_Rig:torso_joint|C_Robot_Rig:chest_joint|C_Robot_Rig:R_clavicle_joint|C_Robot_Rig:R_shoulder_joint" 
+		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:joint_group|C_Robot_Rig:root_joint_group|C_Robot_Rig:root_joint|C_Robot_Rig:torso_joint_group|C_Robot_Rig:torso_joint|C_Robot_Rig:chest_joint_group|C_Robot_Rig:chest_joint|C_Robot_Rig:R_clavicle_joint_group|C_Robot_Rig:R_clavicle_joint|C_Robot_Rig:R_shoulder_joint_group|C_Robot_Rig:R_shoulder_joint" 
 		"segmentScaleCompensate" " 1"
-		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:root_joint_group|C_Robot_Rig:root_joint|C_Robot_Rig:torso_joint|C_Robot_Rig:chest_joint|C_Robot_Rig:head_joint" 
-		"translate" " -type \"double3\" 3.97193868122107041 0.12665692192782307 0.13865967676358348"
-		
-		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:root_joint_group|C_Robot_Rig:root_joint|C_Robot_Rig:torso_joint|C_Robot_Rig:chest_joint|C_Robot_Rig:head_joint" 
-		"translateX" " -av"
-		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:root_joint_group|C_Robot_Rig:root_joint|C_Robot_Rig:torso_joint|C_Robot_Rig:chest_joint|C_Robot_Rig:head_joint" 
-		"translateY" " -av"
-		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:root_joint_group|C_Robot_Rig:root_joint|C_Robot_Rig:torso_joint|C_Robot_Rig:chest_joint|C_Robot_Rig:head_joint" 
-		"translateZ" " -av"
+		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:joint_group|C_Robot_Rig:root_joint_group|C_Robot_Rig:root_joint|C_Robot_Rig:torso_joint_group|C_Robot_Rig:torso_joint|C_Robot_Rig:chest_joint_group|C_Robot_Rig:chest_joint|C_Robot_Rig:head_joint_group|C_Robot_Rig:head_joint" 
+		"translate" " -type \"double3\" 2.20816151361975788 0 0"
+		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:joint_group|C_Robot_Rig:R_foot_joint_group|C_Robot_Rig:R_heel_joint" 
+		"rotate" " -type \"double3\" -43.20000174161845763 0 0"
+		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:joint_group|C_Robot_Rig:R_foot_joint_group|C_Robot_Rig:R_heel_joint" 
+		"rotateX" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim" "visibility" " -av 1"
 		
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim" "translate" " -type \"double3\" 0 0 0"
@@ -467,8 +419,10 @@ createNode reference -n "C_Robot_RigRN";
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim" "rotateX" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim" "rotateY" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim" "rotateZ" " -av"
+		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim" "GlobalScale" " -av -k 1 1"
+		
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim" 
-		"translate" " -type \"double3\" -1.42577077566346144 -1.04952143321143265 0.26913013848710804"
+		"translate" " -type \"double3\" -2.17672053949891886 -0.81916381892361612 0.64831425841748647"
 		
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim" 
 		"translateX" " -av"
@@ -477,7 +431,7 @@ createNode reference -n "C_Robot_RigRN";
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim" 
 		"translateZ" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim" 
-		"rotate" " -type \"double3\" 22.222148235536757 -7.08254187599349372 -1.79043562795076805"
+		"rotate" " -type \"double3\" 24.08464114971091163 -2.18308248803938554 4.87090386529011443"
 		
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim" 
 		"rotateX" " -av"
@@ -494,7 +448,7 @@ createNode reference -n "C_Robot_RigRN";
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim" 
 		"translateZ" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim" 
-		"rotate" " -type \"double3\" 4.29258834276320744 -1.87708872656395331 1.71762853859363185"
+		"rotate" " -type \"double3\" 7.7705444542698654 -10.23355463352478267 2.85957047045268586"
 		
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim" 
 		"rotateX" " -av"
@@ -511,7 +465,7 @@ createNode reference -n "C_Robot_RigRN";
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim" 
 		"translateZ" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim" 
-		"rotate" " -type \"double3\" 8.62971322437070931 -6.42090534930993062 3.6436394253718416"
+		"rotate" " -type \"double3\" 10.39922161798216926 -11.64934889954222363 1.81883858252549069"
 		
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim" 
 		"rotateX" " -av"
@@ -520,7 +474,7 @@ createNode reference -n "C_Robot_RigRN";
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim" 
 		"rotateZ" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:L_clavicle_anim" 
-		"rotate" " -type \"double3\" 0.30308689782275 0.62954854599329291 -3.10787183846929604"
+		"rotate" " -type \"double3\" -13.00611221152848529 -9.42212837050203156 6.93342831716569918"
 		
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:L_clavicle_anim" 
 		"rotateX" " -av"
@@ -529,7 +483,8 @@ createNode reference -n "C_Robot_RigRN";
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:L_clavicle_anim" 
 		"rotateZ" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:L_clavicle_anim|C_Robot_Rig:L_shoulder_anim" 
-		"rotate" " -type \"double3\" 0 -69.76083973241244962 -71.0177832098529791"
+		"rotate" " -type \"double3\" -95.74522867640354207 -66.31679296408945845 19.36862908665302641"
+		
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:L_clavicle_anim|C_Robot_Rig:L_shoulder_anim" 
 		"rotateX" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:L_clavicle_anim|C_Robot_Rig:L_shoulder_anim" 
@@ -537,8 +492,7 @@ createNode reference -n "C_Robot_RigRN";
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:L_clavicle_anim|C_Robot_Rig:L_shoulder_anim" 
 		"rotateZ" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:L_clavicle_anim|C_Robot_Rig:L_shoulder_anim|C_Robot_Rig:L_elbow_anim" 
-		"rotate" " -type \"double3\" -12.60432979816559573 -41.86985321588554143 17.52152789351940498"
-		
+		"rotate" " -type \"double3\" 0 -56.14807117672641112 0"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:L_clavicle_anim|C_Robot_Rig:L_shoulder_anim|C_Robot_Rig:L_elbow_anim" 
 		"rotateX" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:L_clavicle_anim|C_Robot_Rig:L_shoulder_anim|C_Robot_Rig:L_elbow_anim" 
@@ -546,7 +500,7 @@ createNode reference -n "C_Robot_RigRN";
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:L_clavicle_anim|C_Robot_Rig:L_shoulder_anim|C_Robot_Rig:L_elbow_anim" 
 		"rotateZ" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:L_clavicle_anim|C_Robot_Rig:L_shoulder_anim|C_Robot_Rig:L_elbow_anim|C_Robot_Rig:L_hand_anim" 
-		"rotate" " -type \"double3\" -8.43592416897909381 -0.92935222896233527 -11.82482402622921924"
+		"rotate" " -type \"double3\" -6.44310921901168498 -19.83241480701444814 1.18611556533097162"
 		
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:L_clavicle_anim|C_Robot_Rig:L_shoulder_anim|C_Robot_Rig:L_elbow_anim|C_Robot_Rig:L_hand_anim" 
 		"rotateX" " -av"
@@ -563,7 +517,7 @@ createNode reference -n "C_Robot_RigRN";
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:L_clavicle_anim|C_Robot_Rig:L_shoulder_anim|C_Robot_Rig:L_elbow_anim|C_Robot_Rig:L_hand_anim|C_Robot_Rig:L_claw_1_anim" 
 		"rotateZ" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:L_clavicle_anim|C_Robot_Rig:L_shoulder_anim|C_Robot_Rig:L_elbow_anim|C_Robot_Rig:L_hand_anim|C_Robot_Rig:L_claw_2_anim" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 0 0 5.8132904224545392"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:L_clavicle_anim|C_Robot_Rig:L_shoulder_anim|C_Robot_Rig:L_elbow_anim|C_Robot_Rig:L_hand_anim|C_Robot_Rig:L_claw_2_anim" 
 		"rotateX" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:L_clavicle_anim|C_Robot_Rig:L_shoulder_anim|C_Robot_Rig:L_elbow_anim|C_Robot_Rig:L_hand_anim|C_Robot_Rig:L_claw_2_anim" 
@@ -571,7 +525,7 @@ createNode reference -n "C_Robot_RigRN";
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:L_clavicle_anim|C_Robot_Rig:L_shoulder_anim|C_Robot_Rig:L_elbow_anim|C_Robot_Rig:L_hand_anim|C_Robot_Rig:L_claw_2_anim" 
 		"rotateZ" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:R_clavicle_anim" 
-		"rotate" " -type \"double3\" 0 -5.49024246331807486 0"
+		"rotate" " -type \"double3\" 0 -13.04215820829427663 0"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:R_clavicle_anim" 
 		"rotateX" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:R_clavicle_anim" 
@@ -579,7 +533,7 @@ createNode reference -n "C_Robot_RigRN";
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:R_clavicle_anim" 
 		"rotateZ" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:R_clavicle_anim|C_Robot_Rig:R_shoulder_anim" 
-		"rotate" " -type \"double3\" 447.80324493822496379 -82.55196802985932436 349.18349296414066885"
+		"rotate" " -type \"double3\" 124.69572947651256811 -54.11208114815006098 -44.90961344624677309"
 		
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:R_clavicle_anim|C_Robot_Rig:R_shoulder_anim" 
 		"rotateX" " -av"
@@ -588,8 +542,7 @@ createNode reference -n "C_Robot_RigRN";
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:R_clavicle_anim|C_Robot_Rig:R_shoulder_anim" 
 		"rotateZ" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:R_clavicle_anim|C_Robot_Rig:R_shoulder_anim|C_Robot_Rig:R_elbow_anim" 
-		"rotate" " -type \"double3\" 1.40197757219722119 34.45367167486377014 4.08929610335951477"
-		
+		"rotate" " -type \"double3\" 0 37.15801980949382965 0"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:R_clavicle_anim|C_Robot_Rig:R_shoulder_anim|C_Robot_Rig:R_elbow_anim" 
 		"rotateX" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:R_clavicle_anim|C_Robot_Rig:R_shoulder_anim|C_Robot_Rig:R_elbow_anim" 
@@ -597,8 +550,7 @@ createNode reference -n "C_Robot_RigRN";
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:R_clavicle_anim|C_Robot_Rig:R_shoulder_anim|C_Robot_Rig:R_elbow_anim" 
 		"rotateZ" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:R_clavicle_anim|C_Robot_Rig:R_shoulder_anim|C_Robot_Rig:R_elbow_anim|C_Robot_Rig:R_hand_anim" 
-		"rotate" " -type \"double3\" 3.1710849821395759 25.65001834689666893 1.88787661977299104"
-		
+		"rotate" " -type \"double3\" 0 -31.76103920149256155 0"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:R_clavicle_anim|C_Robot_Rig:R_shoulder_anim|C_Robot_Rig:R_elbow_anim|C_Robot_Rig:R_hand_anim" 
 		"rotateX" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:R_clavicle_anim|C_Robot_Rig:R_shoulder_anim|C_Robot_Rig:R_elbow_anim|C_Robot_Rig:R_hand_anim" 
@@ -622,8 +574,7 @@ createNode reference -n "C_Robot_RigRN";
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:R_clavicle_anim|C_Robot_Rig:R_shoulder_anim|C_Robot_Rig:R_elbow_anim|C_Robot_Rig:R_hand_anim|C_Robot_Rig:R_claw_2_anim" 
 		"rotateZ" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:head_anim" 
-		"translate" " -type \"double3\" -0.10315307864956881 0.2382878357866752 -0.0014221240286592524"
-		
+		"translate" " -type \"double3\" 0 0.37942867801443092 -0.047620348212030518"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:head_anim" 
 		"translateX" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:head_anim" 
@@ -631,7 +582,7 @@ createNode reference -n "C_Robot_RigRN";
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:head_anim" 
 		"translateZ" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:head_anim" 
-		"rotate" " -type \"double3\" -39.25049042336635807 -8.25187747063905874 -1.05564273801628983"
+		"rotate" " -type \"double3\" -55.00794029596352175 1.67851134342714881 -1.09818587719467176"
 		
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:head_anim" 
 		"rotateX" " -av"
@@ -640,8 +591,7 @@ createNode reference -n "C_Robot_RigRN";
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:torso_anim|C_Robot_Rig:chest_anim|C_Robot_Rig:head_anim" 
 		"rotateZ" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:waist_anim" 
-		"translate" " -type \"double3\" 0.010408780176843654 -0.0034523708205166093 0.16740122809738839"
-		
+		"translate" " -type \"double3\" 0 0 0"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:waist_anim" 
 		"translateX" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:waist_anim" 
@@ -649,7 +599,7 @@ createNode reference -n "C_Robot_RigRN";
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:waist_anim" 
 		"translateZ" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:waist_anim" 
-		"rotate" " -type \"double3\" -1.60459458593566495 0.65982659767851659 1.90929515451495613"
+		"rotate" " -type \"double3\" 5.14018014025903813 7.994726333730096 1.07711717807219065"
 		
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:waist_anim" 
 		"rotateX" " -av"
@@ -658,8 +608,7 @@ createNode reference -n "C_Robot_RigRN";
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim|C_Robot_Rig:waist_anim" 
 		"rotateZ" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:L_foot_anim" 
-		"translate" " -type \"double3\" -1.4508256362378531 2.2287395474758771 -9.19479667260005229"
-		
+		"translate" " -type \"double3\" 0 7.53449246382645921 -8.68250703060028783"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:L_foot_anim" 
 		"translateX" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:L_foot_anim" 
@@ -667,7 +616,7 @@ createNode reference -n "C_Robot_RigRN";
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:L_foot_anim" 
 		"translateZ" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:L_foot_anim" 
-		"rotate" " -type \"double3\" 0 7.5088651054848885 0"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:L_foot_anim" 
 		"rotateX" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:L_foot_anim" 
@@ -675,19 +624,19 @@ createNode reference -n "C_Robot_RigRN";
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:L_foot_anim" 
 		"rotateZ" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:L_foot_anim" 
-		"toe" " -av -k 1 0"
+		"toe" " -av -k 1 1.1"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:L_foot_anim" 
-		"ToeRoll" " -av -k 1 6"
+		"ToeRoll" " -av -k 1 8.6"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:L_foot_anim" 
-		"PivotToe" " -av -k 1 0"
+		"PivotToe" " -av -k 1 -2.5"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:L_foot_anim" 
 		"BallPivot" " -av -k 1 0"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:L_foot_anim" 
 		"Bank" " -av -k 1 0"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:L_foot_anim" 
-		"FootRoll" " -av -k 1 1.6"
+		"FootRoll" " -av -k 1 0"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:R_foot_anim" 
-		"translate" " -type \"double3\" -0.31898500719367845 2.1165571806568928 6.32858112802621253"
+		"translate" " -type \"double3\" -0.18722416858727717 -0.016878808554913166 3.84182973949184037"
 		
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:R_foot_anim" 
 		"translateX" " -av"
@@ -696,7 +645,7 @@ createNode reference -n "C_Robot_RigRN";
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:R_foot_anim" 
 		"translateZ" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:R_foot_anim" 
-		"rotate" " -type \"double3\" 0 2.08806933682073215 5.15145664003191417"
+		"rotate" " -type \"double3\" 0 -2.97607441436828379 5.15145664003191417"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:R_foot_anim" 
 		"rotateX" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:R_foot_anim" 
@@ -704,17 +653,17 @@ createNode reference -n "C_Robot_RigRN";
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:R_foot_anim" 
 		"rotateZ" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:R_foot_anim" 
-		"toe" " -av -k 1 0"
+		"toe" " -av -k 1 2.2"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:R_foot_anim" 
 		"ToeRoll" " -av -k 1 0"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:R_foot_anim" 
 		"PivotToe" " -av -k 1 0"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:R_foot_anim" 
-		"BallPivot" " -av -k 1 0"
+		"BallPivot" " -av -k 1 -0.70000000000000007"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:R_foot_anim" 
 		"Bank" " -av -k 1 0"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:R_foot_anim" 
-		"FootRoll" " -av -k 1 -6.80000000000000071"
+		"FootRoll" " -av -k 1 -4.80000000000000071"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:L_knee_anim" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:L_knee_anim" 
@@ -724,7 +673,7 @@ createNode reference -n "C_Robot_RigRN";
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:L_knee_anim" 
 		"translateZ" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:R_knee_anim" 
-		"translate" " -type \"double3\" 0.84889318579917727 3.13184921255067739 4.3958231433067283"
+		"translate" " -type \"double3\" -0.95080782159693911 -0.41860759550810211 4.3958231433067283"
 		
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:R_knee_anim" 
 		"translateX" " -av"
@@ -734,8 +683,6 @@ createNode reference -n "C_Robot_RigRN";
 		"translateZ" " -av"
 		2 "C_Robot_Rig:Geo_Layer" "visibility" " 1"
 		2 "C_Robot_Rig:Contrl_Layer" "visibility" " 1"
-		2 "C_Robot_Rig:Joint_Layer" "displayType" " 1"
-		2 "C_Robot_Rig:Joint_Layer" "visibility" " 0"
 		5 4 "C_Robot_RigRN" "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim.translateX" 
 		"C_Robot_RigRN.placeHolderList[103]" ""
 		5 4 "C_Robot_RigRN" "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim.translateY" 
@@ -964,10 +911,10 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n"
 		+ "            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n"
 		+ "            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `modelPanel -unParent -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels `;\n"
-		+ "\t\t\t$editorName = $panelName;\n            modelEditor -e \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 0\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 1\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n"
+		+ "\t\t\t$editorName = $panelName;\n            modelEditor -e \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 0\n                -backfaceCulling 0\n                -xray 1\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 1\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n"
 		+ "                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -maxConstantTransparency 1\n                -rendererName \"vp2Renderer\" \n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 256 256 \n                -bumpResolution 512 512 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 1\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n"
 		+ "                -polymeshes 1\n                -subdivSurfaces 0\n                -planes 0\n                -lights 0\n                -cameras 0\n                -controlVertices 0\n                -hulls 0\n                -grid 1\n                -imagePlane 0\n                -joints 1\n                -ikHandles 0\n                -deformers 0\n                -dynamics 0\n                -particleInstancers 0\n                -fluids 0\n                -hairSystems 0\n                -follicles 0\n                -nCloths 0\n                -nParticles 0\n                -nRigids 0\n                -dynamicConstraints 0\n                -locators 0\n                -manipulators 1\n                -pluginShapes 0\n                -dimensions 0\n                -handles 0\n                -pivots 0\n                -textures 0\n                -strokes 0\n                -motionTrails 0\n                -clipGhosts 0\n                -greasePencils 0\n                -shadows 0\n                $editorName;\n            modelEditor -e -viewSelected 0 $editorName;\n"
-		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n"
+		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 1\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n"
 		+ "            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 0\n            -planes 0\n"
 		+ "            -lights 0\n            -cameras 0\n            -controlVertices 0\n            -hulls 0\n            -grid 1\n            -imagePlane 0\n            -joints 1\n            -ikHandles 0\n            -deformers 0\n            -dynamics 0\n            -particleInstancers 0\n            -fluids 0\n            -hairSystems 0\n            -follicles 0\n            -nCloths 0\n            -nParticles 0\n            -nRigids 0\n            -dynamicConstraints 0\n            -locators 0\n            -manipulators 1\n            -pluginShapes 0\n            -dimensions 0\n            -handles 0\n            -pivots 0\n            -textures 0\n            -strokes 0\n            -motionTrails 0\n            -clipGhosts 0\n            -greasePencils 0\n            -shadows 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" == $panelName) {\n"
 		+ "\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `outlinerPanel -unParent -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            outlinerEditor -e \n                -docTag \"isolOutln_fromSeln\" \n                -showShapes 0\n                -showReferenceNodes 1\n                -showReferenceMembers 1\n                -showAttributes 0\n                -showConnected 0\n                -showAnimCurvesOnly 0\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 1\n                -showAssets 1\n                -showContainedOnly 1\n                -showPublishedAsConnected 0\n                -showContainerContents 1\n                -ignoreDagHierarchy 0\n                -expandConnections 0\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 0\n"
@@ -1000,8 +947,8 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"relationshipPanel\" -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"referenceEditorPanel\" -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n"
 		+ "\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"componentEditorPanel\" -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"dynPaintScriptedPanelType\" -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n"
 		+ "\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"scriptEditorPanel\" -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-defaultImage \"\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 0\\n    -planes 0\\n    -lights 0\\n    -cameras 0\\n    -controlVertices 0\\n    -hulls 0\\n    -grid 1\\n    -imagePlane 0\\n    -joints 1\\n    -ikHandles 0\\n    -deformers 0\\n    -dynamics 0\\n    -particleInstancers 0\\n    -fluids 0\\n    -hairSystems 0\\n    -follicles 0\\n    -nCloths 0\\n    -nParticles 0\\n    -nRigids 0\\n    -dynamicConstraints 0\\n    -locators 0\\n    -manipulators 1\\n    -pluginShapes 0\\n    -dimensions 0\\n    -handles 0\\n    -pivots 0\\n    -textures 0\\n    -strokes 0\\n    -motionTrails 0\\n    -clipGhosts 0\\n    -greasePencils 0\\n    -shadows 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 0\\n    -planes 0\\n    -lights 0\\n    -cameras 0\\n    -controlVertices 0\\n    -hulls 0\\n    -grid 1\\n    -imagePlane 0\\n    -joints 1\\n    -ikHandles 0\\n    -deformers 0\\n    -dynamics 0\\n    -particleInstancers 0\\n    -fluids 0\\n    -hairSystems 0\\n    -follicles 0\\n    -nCloths 0\\n    -nParticles 0\\n    -nRigids 0\\n    -dynamicConstraints 0\\n    -locators 0\\n    -manipulators 1\\n    -pluginShapes 0\\n    -dimensions 0\\n    -handles 0\\n    -pivots 0\\n    -textures 0\\n    -strokes 0\\n    -motionTrails 0\\n    -clipGhosts 0\\n    -greasePencils 0\\n    -shadows 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 1\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 0\\n    -planes 0\\n    -lights 0\\n    -cameras 0\\n    -controlVertices 0\\n    -hulls 0\\n    -grid 1\\n    -imagePlane 0\\n    -joints 1\\n    -ikHandles 0\\n    -deformers 0\\n    -dynamics 0\\n    -particleInstancers 0\\n    -fluids 0\\n    -hairSystems 0\\n    -follicles 0\\n    -nCloths 0\\n    -nParticles 0\\n    -nRigids 0\\n    -dynamicConstraints 0\\n    -locators 0\\n    -manipulators 1\\n    -pluginShapes 0\\n    -dimensions 0\\n    -handles 0\\n    -pivots 0\\n    -textures 0\\n    -strokes 0\\n    -motionTrails 0\\n    -clipGhosts 0\\n    -greasePencils 0\\n    -shadows 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 1\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 0\\n    -planes 0\\n    -lights 0\\n    -cameras 0\\n    -controlVertices 0\\n    -hulls 0\\n    -grid 1\\n    -imagePlane 0\\n    -joints 1\\n    -ikHandles 0\\n    -deformers 0\\n    -dynamics 0\\n    -particleInstancers 0\\n    -fluids 0\\n    -hairSystems 0\\n    -follicles 0\\n    -nCloths 0\\n    -nParticles 0\\n    -nRigids 0\\n    -dynamicConstraints 0\\n    -locators 0\\n    -manipulators 1\\n    -pluginShapes 0\\n    -dimensions 0\\n    -handles 0\\n    -pivots 0\\n    -textures 0\\n    -strokes 0\\n    -motionTrails 0\\n    -clipGhosts 0\\n    -greasePencils 0\\n    -shadows 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        setFocus `paneLayout -q -p1 $gMainPane`;\n        sceneUIReplacement -deleteRemaining;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
@@ -2908,8 +2855,8 @@ createNode animCurveTA -n "R_knee_anim_rotateZ";
 	setAttr ".tan" 2;
 	setAttr -s 7 ".ktv[0:6]"  1 0 2 0 3 0 4 0 6 0 7 0 10 0;
 select -ne :time1;
-	setAttr ".o" 12;
-	setAttr ".unw" 12;
+	setAttr ".o" 1;
+	setAttr ".unw" 1;
 select -ne :renderPartition;
 	setAttr -s 3 ".st";
 select -ne :renderGlobalsList1;
@@ -2939,6 +2886,7 @@ select -ne :hardwareRenderingGlobals;
 select -ne :defaultHardwareRenderGlobals;
 	setAttr ".res" -type "string" "ntsc_4d 646 485 1.333";
 select -ne :ikSystem;
+	setAttr -s 4 ".sol";
 connectAttr "root_anim_translateX.o" "C_Robot_RigRN.phl[103]";
 connectAttr "root_anim_translateY.o" "C_Robot_RigRN.phl[104]";
 connectAttr "root_anim_translateZ.o" "C_Robot_RigRN.phl[105]";
@@ -3070,4 +3018,4 @@ connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 dataStructure -fmt "raw" -as "name=externalContentTable:string=node:string=key:string=upath:uint32=upathcrc:string=rpath:string=roles";
 applyMetadata -fmt "raw" -v "channel\nname externalContentTable\nstream\nname v1.0\nindexType numeric\nstructure externalContentTable\n0\n\"C_Robot_RigRN\" \"\" \"/Users/Emi-Bear/Desktop/MonsterRobotRunner/ART/C_Robot/C_Robot_Rig.ma\" 3061569932 \"/Users/Emi-Bear/Desktop/MonsterRobotRunner/ART/C_Robot/C_Robot_Rig.ma\" \"FileRef\"\nendStream\nendChannel\nendAssociations\n" 
 		-scn;
-// End of C_Robot_Run.ma
+// End of C_Robot_Run_Baked_2.ma

@@ -352,12 +352,12 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: root_joint
-      position: {x: 2.27428644e-17, y: .818104923, z: .00181758148}
-      rotation: {x: 0, y: -1, z: 0, w: -2.673817e-10}
+      position: {x: 3.7252903e-09, y: .818104923, z: -.0437178314}
+      rotation: {x: 0, y: -1, z: 0, w: 8.42937027e-08}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: waist_joint
-      position: {x: 3.53701338e-17, y: -.07896512, z: .00268762838}
+      position: {x: 3.88578052e-17, y: -.07896512, z: .00268762838}
       rotation: {x: 0, y: 1.22464685e-16, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
@@ -377,7 +377,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: L_foot_shadow
-      position: {x: 8.88178433e-17, y: -4.16333651e-18, z: 6.66133841e-17}
+      position: {x: 4.44089216e-17, y: -1.11022304e-17, z: -4.44089216e-17}
       rotation: {x: .585213304, y: .396861494, z: -.584776938, w: -.397570521}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
@@ -402,12 +402,12 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: R_foot_shadow
-      position: {x: .311391324, y: -2.04533217e-06, z: -2.44249071e-16}
-      rotation: {x: -1.99840144e-15, y: -4.27831768e-15, z: .827304423, w: .561753809}
+      position: {x: .311391324, y: -2.04531307e-06, z: -2.22044605e-16}
+      rotation: {x: -2.0539126e-15, y: -4.33382883e-15, z: .827304423, w: .561753809}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: R_toe_shadow
-      position: {x: -.131636187, y: 3.33066921e-17, z: -3.77475839e-16}
+      position: {x: -.131636187, y: -4.16712238e-12, z: -3.77475839e-16}
       rotation: {x: .148776099, y: .691278279, z: -.148776099, w: .691278279}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
@@ -422,7 +422,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: L_clavicle_joint
-      position: {x: -.252915621, y: -.145284668, z: 3.26128033e-17}
+      position: {x: -.252915621, y: -.145284668, z: 5.55111521e-18}
       rotation: {x: .71051687, y: -.703680158, z: -5.84474437e-05, w: 5.90153031e-05}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
@@ -482,7 +482,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: head_joint
-      position: {x: -.368277401, y: 9.76377856e-17, z: 9.99200762e-17}
+      position: {x: -.368277401, y: 1.05471186e-16, z: 9.99200762e-17}
       rotation: {x: .707106829, y: -.707106829, z: 4.00614132e-16, w: 3.14018513e-16}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1

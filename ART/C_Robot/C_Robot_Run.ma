@@ -1,6 +1,6 @@
 //Maya ASCII 2015 scene
 //Name: C_Robot_Run.ma
-//Last modified: Wed, Nov 12, 2014 07:13:20 PM
+//Last modified: Thu, Nov 13, 2014 02:46:33 AM
 //Codeset: UTF-8
 file -rdi 1 -ns "C_Robot_Rig" -rfn "C_Robot_RigRN" -op "v=0;" "/Users/Emi-Bear/Desktop/MonsterRobotRunner/ART/C_Robot/C_Robot_Rig.ma";
 file -r -ns "C_Robot_Rig" -dr 1 -rfn "C_Robot_RigRN" -op "v=0;" "/Users/Emi-Bear/Desktop/MonsterRobotRunner/ART/C_Robot/C_Robot_Rig.ma";
@@ -16,14 +16,14 @@ fileInfo "osv" "Mac OS X 10.9.5";
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 57.441106103697223 -0.65994184676490497 -9.0859086606689452 ;
-	setAttr ".r" -type "double3" 7.2000000000003919 -259.59999999999809 0 ;
+	setAttr ".t" -type "double3" -23.422802451921964 13.567622483724158 -20.603843309061631 ;
+	setAttr ".r" -type "double3" -11.999999999998439 -496.39999999997525 0 ;
 	setAttr ".rp" -type "double3" 0 4.4408920985006262e-16 0 ;
 	setAttr ".rpt" -type "double3" -1.6485040534808017e-16 -3.2011027817205036e-16 -1.5411003564579974e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 60.971376276410538;
+	setAttr ".coi" 31.676066704080213;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -393,7 +393,7 @@ createNode reference -n "C_Robot_RigRN";
 		"C_Robot_RigRN.placeHolderList[101]" ""
 		5 4 "C_Robot_RigRN" "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:R_knee.rotateZ" 
 		"C_Robot_RigRN.placeHolderList[102]" ""
-		"C_Robot_RigRN" 267
+		"C_Robot_RigRN" 270
 		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:L_foot_joint_group" "translate" 
 		" -type \"double3\" -0.19521138713346309 1.11349293161067653 -3.82126104871009442"
 		
@@ -411,6 +411,10 @@ createNode reference -n "C_Robot_RigRN";
 		
 		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:L_foot_joint_group" "rotateZ" " -av"
 		
+		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:L_foot_joint_group|C_Robot_Rig:L_heel_joint|C_Robot_Rig:L_ball_joint|C_Robot_Rig:L_toe_joint" 
+		"rotate" " -type \"double3\" 0 0 0"
+		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:L_foot_joint_group|C_Robot_Rig:L_heel_joint|C_Robot_Rig:L_ball_joint|C_Robot_Rig:L_toe_joint" 
+		"rotateZ" " -av"
 		2 "|C_Robot_Rig:C_Robot_Joint|C_Robot_Rig:R_foot_joint_group" "translate" 
 		" -type \"double3\" 1.28600053895582711 12.71146465891390243 -6.2595354349040484"
 		
@@ -716,7 +720,8 @@ createNode reference -n "C_Robot_RigRN";
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:R_foot_anim" 
 		"FootRoll" " -av -k 1 -6.80000000000000071"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:L_knee_anim" 
-		"translate" " -type \"double3\" 0 0 0"
+		"translate" " -type \"double3\" -0.96346199292762336 -1.490343185869766 -3.88739282683907827"
+		
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:L_knee_anim" 
 		"translateX" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:L_knee_anim" 
@@ -732,10 +737,11 @@ createNode reference -n "C_Robot_RigRN";
 		"translateY" " -av"
 		2 "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:R_knee_anim" 
 		"translateZ" " -av"
+		2 "C_Robot_Rig:Geo_Layer" "displayType" " 2"
 		2 "C_Robot_Rig:Geo_Layer" "visibility" " 1"
 		2 "C_Robot_Rig:Contrl_Layer" "visibility" " 1"
 		2 "C_Robot_Rig:Joint_Layer" "displayType" " 1"
-		2 "C_Robot_Rig:Joint_Layer" "visibility" " 0"
+		2 "C_Robot_Rig:Joint_Layer" "visibility" " 1"
 		5 4 "C_Robot_RigRN" "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim.translateX" 
 		"C_Robot_RigRN.placeHolderList[103]" ""
 		5 4 "C_Robot_RigRN" "|C_Robot_Rig:C_Robot_Anim|C_Robot_Rig:world_anim|C_Robot_Rig:root_anim.translateY" 
@@ -2867,46 +2873,57 @@ createNode animCurveTA -n "L_knee_rotateZ";
 	setAttr -s 10 ".koy[7:9]"  0 0 0;
 createNode animCurveTL -n "L_knee_anim_translateX";
 	setAttr ".tan" 2;
-	setAttr ".ktv[0]"  10 0;
+	setAttr -s 12 ".ktv[0:11]"  1 -0.67571438751590551 2 -0.45047625834393723
+		 3 0.26538830085149145 4 0 5 0 6 0.13741121736673811 7 0.76971769849468485 8 1.4737229412175774
+		 9 0.7368614706087887 10 0 11 0 12 -0.96346199292762336;
 createNode animCurveTL -n "L_knee_anim_translateY";
 	setAttr ".tan" 2;
-	setAttr ".ktv[0]"  10 0;
+	setAttr -s 12 ".ktv[0:11]"  1 -0.12380982542873697 2 -2.5299567436329005
+		 3 -1.7131710874032406 4 2.386022630660285 5 1.9883521922169041 6 1.5906817537735234
+		 7 1.1930113153301425 8 0.79534087688676203 9 0.39767043844338101 10 0 11 -1.490343185869766
+		 12 -1.490343185869766;
 createNode animCurveTL -n "L_knee_anim_translateZ";
 	setAttr ".tan" 2;
-	setAttr ".ktv[0]"  10 0;
+	setAttr -s 12 ".ktv[0:11]"  1 -6.354457721820399 2 -7.5175191577416758
+		 3 -1.8048460143364906 4 2.0304741024228923 5 1.6920617520190768 6 1.3536494016152616
+		 7 1.015237051211447 8 0.67682470080763246 9 0.33841235040381623 10 0 11 -3.8873928268390783
+		 12 -3.8873928268390783;
 createNode animCurveTA -n "L_knee_anim_rotateX";
 	setAttr ".tan" 2;
-	setAttr ".ktv[0]"  10 0;
+	setAttr -s 12 ".ktv[0:11]"  1 0 2 0 3 0 4 0 5 0 6 0 7 0 8 0 9 0 10 0
+		 11 0 12 0;
 createNode animCurveTA -n "L_knee_anim_rotateY";
 	setAttr ".tan" 2;
-	setAttr ".ktv[0]"  10 0;
+	setAttr -s 12 ".ktv[0:11]"  1 0 2 0 3 0 4 0 5 0 6 0 7 0 8 0 9 0 10 0
+		 11 0 12 0;
 createNode animCurveTA -n "L_knee_anim_rotateZ";
 	setAttr ".tan" 2;
-	setAttr ".ktv[0]"  10 0;
+	setAttr -s 12 ".ktv[0:11]"  1 0 2 0 3 0 4 0 5 0 6 0 7 0 8 0 9 0 10 0
+		 11 0 12 0;
 createNode animCurveTL -n "R_knee_anim_translateX";
 	setAttr ".tan" 2;
-	setAttr -s 7 ".ktv[0:6]"  1 -0.95080782159693911 2 -3.0124033561662644
+	setAttr -s 8 ".ktv[0:7]"  1 -0.95080782159693911 2 -3.0124033561662644
 		 3 -2.1142234646618743 4 -0.90406190201427106 6 0.040092107847433334 7 0.24229237733536937
-		 10 0.84889318579917727;
+		 8 -0.0097356500863035045 10 0.84889318579917727;
 createNode animCurveTL -n "R_knee_anim_translateY";
 	setAttr ".tan" 2;
-	setAttr -s 7 ".ktv[0:6]"  1 -0.41860759550810211 2 -1.9886489678894246
+	setAttr -s 8 ".ktv[0:7]"  1 -0.41860759550810211 2 -1.9886489678894246
 		 3 -1.3485866953344119 4 -0.7085244227793992 6 -1.8517406201140576 7 -0.60584316194787369
-		 10 3.1318492125506774;
+		 8 -2.3679850156120366 10 3.1318492125506774;
 createNode animCurveTL -n "R_knee_anim_translateZ";
 	setAttr ".tan" 2;
-	setAttr -s 7 ".ktv[0:6]"  1 4.3958231433067283 2 4.3958231433067283
+	setAttr -s 8 ".ktv[0:7]"  1 4.3958231433067283 2 4.3958231433067283
 		 3 4.3958231433067265 4 -1.2941845545390471 6 -5.0054026627312362 7 -5.6817243133098678
-		 10 4.3958231433067283;
+		 8 -5.0725090028523665 10 4.3958231433067283;
 createNode animCurveTA -n "R_knee_anim_rotateX";
 	setAttr ".tan" 2;
-	setAttr -s 7 ".ktv[0:6]"  1 0 2 0 3 0 4 0 6 0 7 0 10 0;
+	setAttr -s 8 ".ktv[0:7]"  1 0 2 0 3 0 4 0 6 0 7 0 8 0 10 0;
 createNode animCurveTA -n "R_knee_anim_rotateY";
 	setAttr ".tan" 2;
-	setAttr -s 7 ".ktv[0:6]"  1 0 2 0 3 0 4 0 6 0 7 0 10 0;
+	setAttr -s 8 ".ktv[0:7]"  1 0 2 0 3 0 4 0 6 0 7 0 8 0 10 0;
 createNode animCurveTA -n "R_knee_anim_rotateZ";
 	setAttr ".tan" 2;
-	setAttr -s 7 ".ktv[0:6]"  1 0 2 0 3 0 4 0 6 0 7 0 10 0;
+	setAttr -s 8 ".ktv[0:7]"  1 0 2 0 3 0 4 0 6 0 7 0 8 0 10 0;
 select -ne :time1;
 	setAttr ".o" 12;
 	setAttr ".unw" 12;

@@ -350,8 +350,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 351487478}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.63614941, z: -10.8420277}
+  m_LocalRotation: {x: -.0436193943, y: 0, z: 0, w: .999048233}
+  m_LocalPosition: {x: 0, y: 1.81880903, z: -10.8323889}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1107,7 +1107,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: b008f12b8770f47db870d13c952a84c4, type: 2}
+  - {fileID: 2100000, guid: 02eadad3fc8cf47debb1337f6c14afa0, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1141,9 +1141,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1196201939}
-  m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106709}
-  m_LocalPosition: {x: 0, y: 6.68003464, z: 7.86862326}
-  m_LocalScale: {x: 4.92749071, y: 1.1888634, z: 1.58832979}
+  m_LocalRotation: {x: -1.15202326e-07, y: .707106709, z: -.707106829, w: -1.15202312e-07}
+  m_LocalPosition: {x: -1.62574713e-06, y: 2.90070295, z: 2.87924123}
+  m_LocalScale: {x: 4, y: 1, z: 1.69867516}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -1568,7 +1568,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: b008f12b8770f47db870d13c952a84c4, type: 2}
+  - {fileID: 2100000, guid: ab473abe1c852418a9231e568fb50ef9, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1604,7 +1604,7 @@ Transform:
   m_GameObject: {fileID: 1639328098}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1.66440141}
-  m_LocalScale: {x: 4.92749071, y: 1.1888634, z: 2.26669312}
+  m_LocalScale: {x: 4, y: 1, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -1665,7 +1665,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
-  m_Center: {x: 0, y: 0}
+  m_Center: {x: 0, y: 1.60000002}
 --- !u!1 &1738443987
 GameObject:
   m_ObjectHideFlags: 0

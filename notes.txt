@@ -1,0 +1,28 @@
+Maya to Unity:
+10 maya units = 1 unity unit
+
+
+UNITY:
+1 frame = .041666 sec
+
+run speed: 0.2 units / .041666 sec / 1 frame
+aka: 4.8 units / sec
+
+Jump duration: 0.666 seconds
+Jump height: 2 units +
+
+tether pause
+jump pause (before)
+
+
+
+MAYA:
+24 frames/second
+
+speed: 2 maya units / frame
+height: 20 maya units
+
+run: 16 frames to distance of 32
+jump: 16 frames
+idle: 13 frames
+pulled: 6 freams

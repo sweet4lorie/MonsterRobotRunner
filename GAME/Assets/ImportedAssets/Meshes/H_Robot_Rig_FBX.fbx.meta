@@ -1,0 +1,498 @@
+fileFormatVersion: 2
+guid: 8a1c78db9fe0f455691d4541be8e80cc
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: H_Robot_Rig:bottom_geo
+    100002: H_Robot_Rig:chest_joint
+    100004: H_Robot_Rig:H_robot_geo_group
+    100006: H_Robot_Rig:H_robot_joint_group
+    100008: H_Robot_Rig:head_joint
+    100010: H_Robot_Rig:L_ankle_shadow_joint
+    100012: H_Robot_Rig:L_clavicle_joint
+    100014: H_Robot_Rig:L_claw1_joint
+    100016: H_Robot_Rig:L_claw2_joint
+    100018: H_Robot_Rig:L_elbow_joint
+    100020: H_Robot_Rig:L_foot_shadow_joint
+    100022: H_Robot_Rig:L_hand_geo
+    100024: H_Robot_Rig:L_hand_joint
+    100026: H_Robot_Rig:L_hip_joint
+    100028: H_Robot_Rig:L_knee_joint
+    100030: H_Robot_Rig:L_shoulder_geo
+    100032: H_Robot_Rig:L_shoulder_joint
+    100034: H_Robot_Rig:L_toe_shadow_joint
+    100036: H_Robot_Rig:R_ankle_shadow_joint
+    100038: H_Robot_Rig:R_clavicle_joint
+    100040: H_Robot_Rig:R_claw1_joint
+    100042: H_Robot_Rig:R_claw2_joint
+    100044: H_Robot_Rig:R_elbow_joint
+    100046: H_Robot_Rig:R_foot_shadow_joint
+    100048: H_Robot_Rig:R_hand_geo
+    100050: H_Robot_Rig:R_hand_joint
+    100052: H_Robot_Rig:R_hip_joint
+    100054: H_Robot_Rig:R_knee_joint
+    100056: H_Robot_Rig:R_shoulder_geo
+    100058: H_Robot_Rig:R_shoulder_joint
+    100060: H_Robot_Rig:R_toe_shadow_joint
+    100062: H_Robot_Rig:ROOT_JOINT
+    100064: H_Robot_Rig:root_joint
+    100066: H_Robot_Rig:root_joint_group
+    100068: H_Robot_Rig:waist_2_joint
+    100070: H_Robot_Rig:waist_geo
+    100072: H_Robot_Rig:waist_joint
+    100074: //RootNode
+    400000: H_Robot_Rig:bottom_geo
+    400002: H_Robot_Rig:chest_joint
+    400004: H_Robot_Rig:H_robot_geo_group
+    400006: H_Robot_Rig:H_robot_joint_group
+    400008: H_Robot_Rig:head_joint
+    400010: H_Robot_Rig:L_ankle_shadow_joint
+    400012: H_Robot_Rig:L_clavicle_joint
+    400014: H_Robot_Rig:L_claw1_joint
+    400016: H_Robot_Rig:L_claw2_joint
+    400018: H_Robot_Rig:L_elbow_joint
+    400020: H_Robot_Rig:L_foot_shadow_joint
+    400022: H_Robot_Rig:L_hand_geo
+    400024: H_Robot_Rig:L_hand_joint
+    400026: H_Robot_Rig:L_hip_joint
+    400028: H_Robot_Rig:L_knee_joint
+    400030: H_Robot_Rig:L_shoulder_geo
+    400032: H_Robot_Rig:L_shoulder_joint
+    400034: H_Robot_Rig:L_toe_shadow_joint
+    400036: H_Robot_Rig:R_ankle_shadow_joint
+    400038: H_Robot_Rig:R_clavicle_joint
+    400040: H_Robot_Rig:R_claw1_joint
+    400042: H_Robot_Rig:R_claw2_joint
+    400044: H_Robot_Rig:R_elbow_joint
+    400046: H_Robot_Rig:R_foot_shadow_joint
+    400048: H_Robot_Rig:R_hand_geo
+    400050: H_Robot_Rig:R_hand_joint
+    400052: H_Robot_Rig:R_hip_joint
+    400054: H_Robot_Rig:R_knee_joint
+    400056: H_Robot_Rig:R_shoulder_geo
+    400058: H_Robot_Rig:R_shoulder_joint
+    400060: H_Robot_Rig:R_toe_shadow_joint
+    400062: H_Robot_Rig:ROOT_JOINT
+    400064: H_Robot_Rig:root_joint
+    400066: H_Robot_Rig:root_joint_group
+    400068: H_Robot_Rig:waist_2_joint
+    400070: H_Robot_Rig:waist_geo
+    400072: H_Robot_Rig:waist_joint
+    400074: //RootNode
+    4300000: H_Robot_Rig:R_shoulder_geo
+    4300002: H_Robot_Rig:R_hand_geo
+    4300004: H_Robot_Rig:L_hand_geo
+    4300006: H_Robot_Rig:L_shoulder_geo
+    4300008: H_Robot_Rig:waist_geo
+    4300010: H_Robot_Rig:bottom_geo
+    9500000: //RootNode
+    13700000: H_Robot_Rig:bottom_geo
+    13700002: H_Robot_Rig:L_hand_geo
+    13700004: H_Robot_Rig:L_shoulder_geo
+    13700006: H_Robot_Rig:R_hand_geo
+    13700008: H_Robot_Rig:R_shoulder_geo
+    13700010: H_Robot_Rig:waist_geo
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .100000001
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: H_Robot_Rig:root_joint
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: H_Robot_Rig:L_hip_joint
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: H_Robot_Rig:R_hip_joint
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: H_Robot_Rig:L_knee_joint
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: H_Robot_Rig:R_knee_joint
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: H_Robot_Rig:L_foot_shadow_joint
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: H_Robot_Rig:R_foot_shadow_joint
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: H_Robot_Rig:waist_2_joint
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: H_Robot_Rig:chest_joint
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: H_Robot_Rig:L_clavicle_joint
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: H_Robot_Rig:R_clavicle_joint
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: H_Robot_Rig:L_shoulder_joint
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: H_Robot_Rig:R_shoulder_joint
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: H_Robot_Rig:L_elbow_joint
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: H_Robot_Rig:R_elbow_joint
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: H_Robot_Rig:L_hand_joint
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: H_Robot_Rig:R_hand_joint
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: H_Robot_Rig:L_toe_shadow_joint
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: H_Robot_Rig:R_toe_shadow_joint
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: H_Robot_Rig:head_joint
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: H_Robot_Rig_FBX(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:H_robot_geo_group
+      position: {x: 0, y: .00489660492, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:bottom_geo
+      position: {x: -0, y: -.00489660492, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:L_hand_geo
+      position: {x: -0, y: -.00489660492, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:L_shoulder_geo
+      position: {x: -0, y: -.00489660492, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:R_hand_geo
+      position: {x: -0, y: -.00489660492, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:R_shoulder_geo
+      position: {x: -0, y: -.00489660492, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:waist_geo
+      position: {x: -0, y: -.000362711464, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:H_robot_joint_group
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:root_joint_group
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:ROOT_JOINT
+      position: {x: -0, y: 0, z: -.0436141491}
+      rotation: {x: 0, y: -1.11022302e-16, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:root_joint
+      position: {x: -6.93889401e-19, y: .771293938, z: 0}
+      rotation: {x: 0, y: -.707106709, z: 0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:waist_joint
+      position: {x: -.0437178314, y: -.0633411109, z: -.000103683909}
+      rotation: {x: -0, y: -.707106829, z: 0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:L_hip_joint
+      position: {x: .137527004, y: -.0811112672, z: -1.68422013e-17}
+      rotation: {x: -.5, y: -.5, z: .5, w: .5}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:L_knee_joint
+      position: {x: -.251479, y: 2.79197776e-17, z: -1.55431221e-16}
+      rotation: {x: 3.90389691e-31, y: -5.70394359e-30, z: .0920279771, w: .995756447}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:L_ankle_shadow_joint
+      position: {x: -.250317961, y: 2.22044608e-17, z: 2.22044608e-17}
+      rotation: {x: .704106152, y: -.0650736168, z: -.704106152, w: -.0650736168}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:L_foot_shadow_joint
+      position: {x: 7.77156104e-17, y: -5.55111512e-17, z: 0}
+      rotation: {x: .60818696, y: .360705823, z: -.60818696, w: -.360705823}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:L_toe_shadow_joint
+      position: {x: -.195551902, y: -1.11022304e-17, z: -2.88658002e-16}
+      rotation: {x: .685110629, y: -.174995571, z: -.174995571, w: .685110629}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:R_hip_joint
+      position: {x: -.137527004, y: -.0811112672, z: -1.68422013e-17}
+      rotation: {x: .5, y: -.5, z: -.5, w: .5}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:R_knee_joint
+      position: {x: .251479, y: -4.18796879e-17, z: 1.55431221e-16}
+      rotation: {x: 3.60407997e-30, y: -9.39930399e-30, z: .0920279771, w: .995756447}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:R_ankle_shadow_joint
+      position: {x: .250317961, y: 7.77156104e-17, z: 8.88178433e-17}
+      rotation: {x: -1.11022302e-16, y: -3.74700271e-16, z: -.587104142, w: .809511423}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:R_foot_shadow_joint
+      position: {x: -6.66133841e-17, y: 9.99200762e-17, z: -1.55431221e-16}
+      rotation: {x: -8.32667268e-17, y: -5.689893e-16, z: -1.11022302e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:R_toe_shadow_joint
+      position: {x: .195551902, y: -1.66533454e-16, z: 2.66453536e-16}
+      rotation: {x: .685110629, y: -.174995571, z: -.174995571, w: .685110629}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:waist_2_joint
+      position: {x: -.0437178314, y: .0490856692, z: -.000103683909}
+      rotation: {x: -0, y: -.707106829, z: 0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:chest_joint
+      position: {x: 5.55111521e-18, y: .275798976, z: -5.55111521e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:head_joint
+      position: {x: -0, y: .0393235087, z: 0}
+      rotation: {x: 0, y: .707106829, z: 0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:L_clavicle_joint
+      position: {x: .298377007, y: .0034899998, z: 1.27675645e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:L_shoulder_joint
+      position: {x: .229491994, y: -.0434099995, z: 1.49880111e-16}
+      rotation: {x: .707100034, y: -.00308538345, z: -.00308530591, w: .707100153}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:L_elbow_joint
+      position: {x: .268164992, y: 2.77555756e-17, z: -4.4408921e-16}
+      rotation: {x: -2.77555756e-16, y: -2.22044605e-16, z: -5.55111512e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:L_hand_joint
+      position: {x: .467974991, y: 5.55111512e-17, z: 1.77635687e-16}
+      rotation: {x: -2.77555756e-16, y: -2.22044605e-16, z: -5.55111512e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:L_claw1_joint
+      position: {x: .0320880003, y: 6.10622677e-17, z: -.0645307004}
+      rotation: {x: .703396738, y: .0723396242, z: -.0723396242, w: .703396738}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:L_claw2_joint
+      position: {x: .0291672852, y: -7.77156104e-17, z: .072256133}
+      rotation: {x: .704157829, y: -.0645119995, z: .0645119995, w: .704157829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:R_clavicle_joint
+      position: {x: -.298377007, y: .0034899998, z: -1.82703194e-16}
+      rotation: {x: 1, y: 4.69622483e-33, z: 1.22464685e-16, w: -6.12323426e-17}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:R_shoulder_joint
+      position: {x: -.229491994, y: .0434099995, z: 7.77156104e-17}
+      rotation: {x: -.00308530591, y: -.707100153, z: .707100034, w: .00308538345}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:R_elbow_joint
+      position: {x: .268164992, y: 4.99600381e-17, z: 1.77635687e-16}
+      rotation: {x: 3.88578059e-16, y: -3.88578059e-16, z: 5.55111512e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:R_hand_joint
+      position: {x: .467974991, y: 8.88178433e-17, z: -1.77635687e-16}
+      rotation: {x: 3.88578059e-16, y: -3.88578059e-16, z: 5.55111512e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:R_claw1_joint
+      position: {x: .0320880003, y: 2.77555756e-17, z: .0645309985}
+      rotation: {x: .703396738, y: -.0723396242, z: .0723396242, w: .703396738}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: H_Robot_Rig:R_claw2_joint
+      position: {x: .0291670002, y: -4.44089216e-17, z: -.0722559988}
+      rotation: {x: .704157829, y: .0645119995, z: -.0645119995, w: .704157829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  additionalBone: 0
+  userData: 

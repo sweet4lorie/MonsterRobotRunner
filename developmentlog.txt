@@ -1,0 +1,412 @@
+Oh Snap!
+=======
+* Emily Chiang <sweet4lorie@csu.fullerton.edu>
+* Brian Chung <bchung94@gmail.com>
+* Niyaz Mahmud
+
+
+2015-3-10
+=========
+
+Previous Week's Objectives
+----------------------------
+
+* [Completed] Finish H-monster rig 10 h [10 h]
+ > Skin and import H-monster
+ > Do quick animation for testing import
+ > Test different bone placements for import of rig
+ > Finish building rig for high-poly version
+ > Emily
+
+* [Unfinished] Reimport and test Animations - [3 h]
+ > New animations for run and jump reimport and test
+ > Emily
+
+* [Completed] Building Sets for level Easy 4 h [4 h]
+ > import any fixed buildings
+ > build level sets for Level Easy
+ > Emily
+
+* [Completed] Refine & Fix Being-pulled Tether mechanic 7 h [8 h]
+ > Character A is being pulled by Character B
+ > Char A should not move past the center of the screen
+ > Background scroll should increase in speed appropriately
+ > Niyaz & Brian
+
+* [Completed] Start Scrolling Foreground components 6 h [6 h]
+ > Scroll foreground components
+ > Test speed based on run speed
+ > Start removing buildings not in scene
+ > Brian
+
+* Artist Update
+ > Color pass on buildings and characters
+ > Low poly Bomb for Start Screen
+ > Fix in-game building models [Completed]
+ > Fix animation speed for run and jump [Completed]
+ > Start on pull/idle animation [Completed]
+ > Cinematic - Model Background for Scene 1
+ > Cinematic - Model H-Monster (Retopo)
+ > Cinematic - Model Energy Bucket
+ > Cut Scenes - Win Ult/Win/Lose Storyboard [Completed]
+ > Cut Scenes - Model Monster Mother Ship
+ > Cut Scenes - Model Robot Mother Ship
+
+
+This Week's Objectives
+----------------------------
+
+* Fix high poly robot rig 5 h
+ > Test high poly robot arm
+ > Finish skinning
+ > Emily
+
+* Start High Poly Monster rig 5 h
+ > Finish setting up high poly monster rig
+ > Start testing skinning methods
+ > Emily
+
+* Reimport and test New/Old Animations 6 h
+ > Import and fix old animations
+ > Import and set up new animations
+ > Test masking tether animations
+ > Emily
+
+* Finish building prefab for all levels 5 h
+ > import any new textures
+ > build level sets for all levels
+ > Emily
+
+* Finish Scroll and Reload Foreground components 6 h
+ > Refine scroll speed and prefab use
+ > Take out model once out of scene
+ > Put randomized prefab after
+ > Brian
+
+* Start UI building 5 h
+ > Start screen, credit
+ > Character selection screen
+ > Niyaz and Brian
+
+* Start research networking component 4 h
+ > Research how to connect players via wifi
+ > Brian
+
+* Start power up 4 h
+ > speed up power up
+ > research door hit
+ > Brian
+
+* Artist Update
+ > Texture Characters
+ > Texture Buildings
+ > Low poly Bomb and setup for Start Screen
+ > Cinematic - Model Background for Scene 1
+ > Cinematic - Model Background for Scene 2
+ > Cinematic - Model H-Monster (UV/Texture)
+ > Cinematic - Model Energy Bucket
+ > Cut Scenes - Model Monster Mother Ship
+ > Cut Scenes - Model Robot Mother Ship
+
+
+
+2015-2-23
+=========
+
+Previous Week's Objectives
+----------------------------
+
+* [Unfinished] H-monster rig 4 h [10 h]
+ > Rig and skin and import H-monster
+ > Do quick animation for testing import
+ > Test different bone placements for import of rig
+ > Start building rig for high-poly version
+ > Emily
+
+* [Completed] Connect run and jump animations 3 h [4 h]
+ > Connect run and jump animations to jump script
+ > Emily
+
+* [Completed] Import ground sets 6 h [4 h]
+ > clean and import all ground sets
+ > start building levels
+ > Emily
+
+* [Completed] Refine & Fix Pull Tether mechanic 5 h [4 h]
+ > Character A pulls Character B
+ > Char B should go past  Char A in a straight line
+ > Brian
+
+* [Unfinished] Refine & Fix Being-pulled Tether mechanic 8 h
+ > Character A is being pulled by Character B
+ > Char A should not move past the center of the screen
+ > Background scroll should increase in speed appropriately
+ > Niyaz & Brian
+
+* Artist Update
+ > Color pass on buildings and characters - Unfinished
+ > Low poly Bomb for Start Screen - Unfinished
+ > Cinematic - Texture Bomb - Completed
+ > Cinematic - Model Background for Scene 1 - Unfinished
+ > Cinematic - Model H-Monster - Completed
+ > Cinematic - Model Energy Bucket - Unfinished
+ > Cut Scenes - Win Ult/Win/Lose Storyboard - Unfinished
+ > Cut Scenes - Concept Monster Mother Ship - Completed
+ > Cut Scenes - Concept Robot Mother Ship - Unfinished
+
+
+This Week's Objectives
+----------------------------
+
+* Finish H-monster rig 10 h
+ > Skin and import H-monster
+ > Do quick animation for testing import
+ > Test different bone placements for import of rig
+ > Finish building rig for high-poly version
+ > Emily
+
+* Reimport and test Animations 3 h
+ > New animations for run and jump reimport and test
+ > Emily
+
+* Building Sets for level Easy 4 h
+ > import any fixed buildings
+ > build level sets for Level Easy
+ > Emily
+
+* Refine & Fix Being-pulled Tether mechanic 8 h
+ > Character A is being pulled by Character B
+ > Char A should not move past the center of the screen
+ > Background scroll should increase in speed appropriately
+ > Niyaz & Brian
+
+* Start Scrolling Foreground components 6 h
+ > Scroll foreground components
+ > Test speed based on run speed
+ > Start removing buildings not in scene
+ > Brian
+
+* Artist Update
+ > Color pass on buildings and characters
+ > Low poly Bomb for Start Screen
+ > Fix in-game building models
+ > Fix animation speed for run and jump 
+ > Start on pull/idle animation
+ > Cinematic - Model Background for Scene 1
+ > Cinematic - Model H-Monster (Retopo)
+ > Cinematic - Model Energy Bucket
+ > Cut Scenes - Win Ult/Win/Lose Storyboard
+ > Cut Scenes - Model Monster Mother Ship
+ > Cut Scenes - Model Robot Mother Ship
+
+
+
+2015-2-17
+=========
+
+Previous Week's Objectives
+----------------------------
+
+* [Completed] UV-scrolling for background scrolling. 4 h [4 h]
+ > Poly rotation may be too costly
+ > Create/Test uv-scrolling for bg scrolling
+ > Brian Chung & Niyaz Mahmud
+
+* [Completed] Research and start Tether mechanic. 6 h [6 h]
+ > Load in second character
+ > Register click & touch for tether
+ > Move char A to char B (and past) in straight line / tether
+ > Brian Chung
+
+* [Unfinished] Build/Import Rig for JK-Robot and H-Monster. 10 h [14 h]
+ > Start and finish JK-Robot rig
+ > Start and finish H-Monster rig
+ > import rig for JK-Robot and H-Monster
+ > Emily Chiang
+
+* [Unfinished] Connect Animation for C-Robot and H-Monster 4 h [6 h]
+ > Figure out how to handle H-Monster extra tail bones
+ > Connect run and jump animation for C-Robot
+ > Emily Chiang
+
+* [Finished] Organize Artist Shotgun. 3 h [3 h]
+ > Set-up shotgun for artist and add assignments
+ > Check if shotguns supports git
+ > Emily Chiang
+
+* Artist Update
+ > Color pass on buildings and characters - Unfinished
+ > Animate First Pass H-Robot run and jump - Completed
+ > Animate First Pass C-Robot idle, pulled - Completed
+ > Cinematic - Model Bomb finish - Completed
+ > Cinematic - Model Background for Scene 1 - Unfinished
+ > Cinematic - Model H-Monster - Unfinished
+ > Cinematic - Model Energy Bucket - Unfinished
+ > Cut Scenes - Win Ult/Win/Lose Storyboard - Unfinished
+ > Cut Scenes - Concept Monster Mother Ship - Unfinished
+ > Cut Scenes - Concept Robot Mother Ship - Unfinished
+
+
+This Week's Objectives
+----------------------------
+
+* H-monster rig 10 h
+ > Rig and skin and import H-monster
+ > Do quick animation for testing import
+ > Test different bone placements for import of rig
+ > Start building rig for high-poly version
+ > Emily
+
+* Connect run and jump animations 4 h
+ > Connect run and jump animations to jump script
+ > Emily
+
+* Import ground sets 4 h
+ > clean and import all ground sets
+ > start building levels
+ > Emily
+
+* Refine & Fix Pull Tether mechanic 4 h
+ > Character A pulls Character B
+ > Char B should go past  Char A in a straight line
+ > Brian
+
+* Refine & Fix Being-pulled Tether mechanic 8 h
+ > Character A is being pulled by Character B
+ > Char A should not move past the center of the screen
+ > Background scroll should increase in speed appropriately
+ > Niyaz & Brian
+
+* Artist Update
+ > Color pass on buildings and characters
+ > Low poly Bomb for Start Screen
+ > Cinematic - Texture Bomb
+ > Cinematic - Model Background for Scene 1
+ > Cinematic - Model H-Monster
+ > Cinematic - Model Energy Bucket
+ > Cut Scenes - Win Ult/Win/Lose Storyboard
+ > Cut Scenes - Model Monster Mother Ship
+ > Cut Scenes - Model Robot Mother Ship
+
+
+
+2015-2-09
+=========
+
+Previous Week's Objectives
+----------------------------
+
+* [Completed] Download Unity, get accustom to user interface, build working scene. 3.5 h [3 h]
+ > Update Unity to latest version.
+ > Understand most of the tools Unity offers to handle transformations and the camera.
+ > Create basic scene that shows basic understanding of Unity.
+ > Everyone
+
+* [Unfinished] Create Background Scroll for scene. 3 h [3 h]
+ > Background must shift, level is meant to be endless.
+ > Player/Character never passes the center of the scene.
+ > Look into methods for randomizing obstacles.
+ > Niyaz Mahmud
+
+* [Completed] Create movement and jump scripts for scene. 3 h [3 h]
+ > WASD movement
+ > Jump controls must match up with sprite animation
+ > Build separate Jump control for CharacterController and RigidBody
+ > Brian Chung
+
+* [Completed] Continue building character models/rigs for players. 8 h [10 h]
+ > Fix leg rig problems for C-Robot and import into unity new rig/animation
+ > Start and finish rig for H-Robot
+ > Review and prep JK-Robot for rigging
+ > Emily Chiang
+
+* Art Update
+ > Cut-scene Storyboard and Animation - Unfinished
+ > Cut-scene Bomb Model (low and high poly) - Unfinished
+ > First pass Level Design - Completed
+ > First pass on C-Robot run and jump - Completed
+ > JK-Robot models (low and high poly) - Completed
+ > H-Monster model (low poly) - Completed
+ > Artists
+
+This Week's Objectives
+----------------------------
+
+* UV-scrolling for background scrolling. 4 h
+ > Poly rotation may be too costly
+ > Create/Test uv-scrolling for bg scrolling
+ > Brian Chung & Niyaz Mahmud
+
+* Research and start Tether mechanic. 6 h
+ > Load in second character
+ > Register click & touch for tether
+ > Move char A to char B (and past) in straight line / tether
+ > Brian Chung
+
+* Build/Import Rig for JK-Robot and H-Monster. 14 h
+ > Start and finish JK-Robot rig
+ > Start and finish H-Monster rig
+ > import rig for JK-Robot and H-Monster
+ > Emily Chiang
+
+* Connect Animation for C-Robot and H-Monster 6 h
+ > Figure out how to handle H-Monster extra tail bones
+ > Connect run and jump animation for C-Robot
+ > Emily Chiang
+
+* Organize Artist Shotgun. 3 h 
+ > Set-up shotgun for artist and add assignments
+ > Check if shotguns supports git
+ > Emily Chiang
+
+* Artist Update
+ > Color pass on buildings and characters
+ > Animate First Pass H-Robot run and jump
+ > Animate First Pass C-Robot idle, pulled
+ > Cinematic - Model Bomb finish
+ > Cinematic - Model Background for Scene 1
+ > Cinematic - Model H-Monster
+ > Cinematic - Model Energy Bucket
+ > Cut Scenes - Win Ult/Win/Lose Storyboard
+ > Cut Scenes - Model Monster Mother Ship
+ > Cut Scenes - Model Robot Mother Ship
+
+
+2015-2-02
+=========
+
+This Week's Objectives
+----------------------------
+
+* Download Unity, get accustom to user interface, build working scene. 3.5 hours
+ > Update Unity to latest version.
+ > Understand most of the tools Unity offers to handle transformations and the camera.
+ > Create basic scene that shows basic understanding of Unity.
+ > Everyone
+
+* Create Background Scroll for scene. 3 hours
+ > Background must shift, level is meant to be endless.
+ > Player/Character never passes the center of the scene.
+ > Look into methods for randomizing obstacles.
+ > Niyaz Mahmud
+
+* Create movement and jump scripts for scene. 3 hours
+ > WASD movement
+ > Jump controls must match up with sprite animation
+ > Build separate Jump control for CharacterController and RigidBody
+ > Brian Chung
+
+* Continue building character models/rigs for players. 8 hours
+ > Fix leg rig problems for C-Robot and import into unity new rig/animation
+ > Start and finish rig for H-Robot
+ > Review and prep JK-Robot for rigging
+ > Emily Chiang
+
+* Art Update
+ > Cut-scene Storyboard and Animatic
+ > Cut-scene Bomb Model (low and high poly)
+ > First pass Level Design
+ > First pass on C-Robot run and jump
+ > JK-Robot models (low and high poly)
+ > H-Monster model (low poly)
+ > Artists

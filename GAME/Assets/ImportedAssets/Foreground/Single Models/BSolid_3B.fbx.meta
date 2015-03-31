@@ -4,14 +4,14 @@ ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: BSolid_3
-    100002: BSolid_3B
-    100004: //RootNode
+    100002: //RootNode
+    100004: BSolid_3B1
     400000: BSolid_3
-    400002: BSolid_3B
-    400004: //RootNode
-    2300000: BSolid_3B
-    3300000: BSolid_3B
-    4300000: BSolid_3B
+    400002: //RootNode
+    400004: BSolid_3B1
+    2300000: BSolid_3B1
+    3300000: BSolid_3B1
+    4300000: BSolid_3B1
     9500000: //RootNode
   materials:
     importMaterials: 1

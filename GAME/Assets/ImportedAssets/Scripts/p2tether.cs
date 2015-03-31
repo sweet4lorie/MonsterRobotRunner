@@ -8,11 +8,13 @@ public class p2tether : MonoBehaviour {
 	public float distX, distY;
 	public float speed, speed2;
 	public bool check;
+	public bool tethered;
 	// Use this for initialization
 	void Start () {
 		speed = 0;
 		speed2 = 0;
 		check = false;
+		tethered = false;
 	}
 	
 	// Update is called once per frame
@@ -25,6 +27,7 @@ public class p2tether : MonoBehaviour {
 			Xpos = transform.position.x;
 			Ypos = transform.position.y;
 			check = true;
+			tethered = true;
 		}
 		if (check == true) {
 			if (distX > 0) {
@@ -57,6 +60,7 @@ public class p2tether : MonoBehaviour {
 				if ((transform.position.x - Xpos) <= distX) {
 					speed = 0;
 					check = false;
+					tethered = false;
 				}
 				if (Mathf.Abs(transform.position.y - Ypos) >= distY) {
 					speed2 = 0;

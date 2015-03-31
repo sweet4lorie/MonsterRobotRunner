@@ -7,7 +7,7 @@ public class P2move : MonoBehaviour {
 
 	private Vector3 forward = new Vector3(0, 0, 5);
 	private Vector3 side = new Vector3(5, 0, 0);
-	private Vector3 up = new Vector3(0, 6, 0);
+	private Vector3 up = new Vector3(0, 8, 0);
 	private Vector3 extragrav = new Vector3(0,-10,0);
 	public bool isgrounded;
 
@@ -31,7 +31,7 @@ public class P2move : MonoBehaviour {
 	}
 
 	IEnumerator Jump() {
-		yield return new WaitForSeconds (0.20f);
+		yield return new WaitForSeconds (0.15f);
 		rigidbody.velocity = up;
 	}
 

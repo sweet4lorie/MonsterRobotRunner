@@ -3,14 +3,15 @@ guid: b3e6ff08ef34841efb6e64197d0f7bd1
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
-    100000: BSolid3
-    100002: //RootNode
-    400000: BSolid3
-    400002: //RootNode
-    2300000: BSolid3
-    3300000: BSolid3
-    4300000: BSolid3
-    6400000: BSolid3
+    100000: BSolid_1
+    100002: BSolid_1C
+    100004: //RootNode
+    400000: BSolid_1
+    400002: BSolid_1C
+    400004: //RootNode
+    2300000: BSolid_1C
+    3300000: BSolid_1C
+    4300000: BSolid_1C
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -33,7 +34,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: .100000001
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0

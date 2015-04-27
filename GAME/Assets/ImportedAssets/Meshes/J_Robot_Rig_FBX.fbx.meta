@@ -1,0 +1,504 @@
+fileFormatVersion: 2
+guid: 40df876432beb4969a694c3e894375a1
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: head_joint
+    100002: J_Robot_Rig:body
+    100004: J_Robot_Rig:bottom
+    100006: J_Robot_Rig:chest_joint
+    100008: J_Robot_Rig:J_Robot_Geo
+    100010: J_Robot_Rig:J_robot_joint_group
+    100012: J_Robot_Rig:L_ankle_shadow_joint
+    100014: J_Robot_Rig:L_arm
+    100016: J_Robot_Rig:L_clavicle_joint
+    100018: J_Robot_Rig:L_elbow_joint
+    100020: J_Robot_Rig:L_foot_shadow_joint
+    100022: J_Robot_Rig:L_hip_joint
+    100024: J_Robot_Rig:L_knee_joint
+    100026: J_Robot_Rig:L_lower_leg
+    100028: J_Robot_Rig:L_shoulder_joint
+    100030: J_Robot_Rig:L_toe_shadow_joint
+    100032: J_Robot_Rig:L_upper_leg
+    100034: J_Robot_Rig:R_ankle
+    100036: J_Robot_Rig:R_arm
+    100038: J_Robot_Rig:R_clavicle_joint
+    100040: J_Robot_Rig:R_elbow_joint
+    100042: J_Robot_Rig:R_foot_shadow_joint
+    100044: J_Robot_Rig:R_hand
+    100046: J_Robot_Rig:R_hand_joint
+    100048: J_Robot_Rig:R_hip_joint
+    100050: J_Robot_Rig:R_knee_joint
+    100052: J_Robot_Rig:R_lower_leg
+    100054: J_Robot_Rig:R_middle_finger_joint
+    100056: J_Robot_Rig:R_pinky_finger_joint
+    100058: J_Robot_Rig:R_shoulder_joint
+    100060: J_Robot_Rig:R_thumb_finger_joint
+    100062: J_Robot_Rig:R_toe_shadow_joint
+    100064: J_Robot_Rig:R_upper_leg
+    100066: J_Robot_Rig:root_joint
+    100068: J_Robot_Rig:root_joint_group
+    100070: J_Robot_Rig:waist_joint
+    100072: //RootNode
+    100074: joint1
+    400000: head_joint
+    400002: J_Robot_Rig:body
+    400004: J_Robot_Rig:bottom
+    400006: J_Robot_Rig:chest_joint
+    400008: J_Robot_Rig:J_Robot_Geo
+    400010: J_Robot_Rig:J_robot_joint_group
+    400012: J_Robot_Rig:L_ankle_shadow_joint
+    400014: J_Robot_Rig:L_arm
+    400016: J_Robot_Rig:L_clavicle_joint
+    400018: J_Robot_Rig:L_elbow_joint
+    400020: J_Robot_Rig:L_foot_shadow_joint
+    400022: J_Robot_Rig:L_hip_joint
+    400024: J_Robot_Rig:L_knee_joint
+    400026: J_Robot_Rig:L_lower_leg
+    400028: J_Robot_Rig:L_shoulder_joint
+    400030: J_Robot_Rig:L_toe_shadow_joint
+    400032: J_Robot_Rig:L_upper_leg
+    400034: J_Robot_Rig:R_ankle
+    400036: J_Robot_Rig:R_arm
+    400038: J_Robot_Rig:R_clavicle_joint
+    400040: J_Robot_Rig:R_elbow_joint
+    400042: J_Robot_Rig:R_foot_shadow_joint
+    400044: J_Robot_Rig:R_hand
+    400046: J_Robot_Rig:R_hand_joint
+    400048: J_Robot_Rig:R_hip_joint
+    400050: J_Robot_Rig:R_knee_joint
+    400052: J_Robot_Rig:R_lower_leg
+    400054: J_Robot_Rig:R_middle_finger_joint
+    400056: J_Robot_Rig:R_pinky_finger_joint
+    400058: J_Robot_Rig:R_shoulder_joint
+    400060: J_Robot_Rig:R_thumb_finger_joint
+    400062: J_Robot_Rig:R_toe_shadow_joint
+    400064: J_Robot_Rig:R_upper_leg
+    400066: J_Robot_Rig:root_joint
+    400068: J_Robot_Rig:root_joint_group
+    400070: J_Robot_Rig:waist_joint
+    400072: //RootNode
+    400074: joint1
+    4300000: J_Robot_Rig:L_arm
+    4300002: J_Robot_Rig:R_arm
+    4300004: J_Robot_Rig:R_lower_leg
+    4300006: J_Robot_Rig:L_lower_leg
+    4300008: J_Robot_Rig:L_upper_leg
+    4300010: J_Robot_Rig:R_upper_leg
+    4300012: J_Robot_Rig:bottom
+    4300014: J_Robot_Rig:body
+    4300016: J_Robot_Rig:R_hand
+    9500000: //RootNode
+    13700000: J_Robot_Rig:body
+    13700002: J_Robot_Rig:bottom
+    13700004: J_Robot_Rig:L_arm
+    13700006: J_Robot_Rig:L_lower_leg
+    13700008: J_Robot_Rig:L_upper_leg
+    13700010: J_Robot_Rig:R_arm
+    13700012: J_Robot_Rig:R_hand
+    13700014: J_Robot_Rig:R_lower_leg
+    13700016: J_Robot_Rig:R_upper_leg
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .100000001
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: J_Robot_Rig:root_joint
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: J_Robot_Rig:L_hip_joint
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: J_Robot_Rig:R_hip_joint
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: J_Robot_Rig:L_knee_joint
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: J_Robot_Rig:R_knee_joint
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: J_Robot_Rig:L_foot_shadow_joint
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: J_Robot_Rig:R_foot_shadow_joint
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: J_Robot_Rig:chest_joint
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: J_Robot_Rig:L_shoulder_joint
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: J_Robot_Rig:R_shoulder_joint
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: J_Robot_Rig:L_elbow_joint
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: J_Robot_Rig:R_elbow_joint
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: J_Robot_Rig:R_hand_joint
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: J_Robot_Rig:L_toe_shadow_joint
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: J_Robot_Rig:R_toe_shadow_joint
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: J_Robot_Rig:R_thumb_finger_joint
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: J_Robot_Rig:R_middle_finger_joint
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: J_Robot_Rig:R_pinky_finger_joint
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint1
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: head_joint
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: J_Robot_Rig_FBX(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:J_Robot_Geo
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:body
+      position: {x: -6.27513043e-17, y: -29.8163414, z: -.493169874}
+      rotation: {x: -6.12323426e-17, y: 1, z: 6.12323426e-17, w: -6.12323426e-17}
+      scale: {x: .0337751172, y: .0337751172, z: .0337751172}
+      transformModified: 1
+    - name: J_Robot_Rig:bottom
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:L_arm
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:L_lower_leg
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:L_upper_leg
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:R_arm
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:R_hand
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:R_lower_leg
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:R_upper_leg
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:J_robot_joint_group
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:root_joint_group
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:root_joint
+      position: {x: -2.28983479e-17, y: .698314905, z: 0}
+      rotation: {x: 0, y: -1, z: 0, w: 2.61505541e-17}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:chest_joint
+      position: {x: 4.93038036e-33, y: .041778978, z: 8.49769401e-35}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: head_joint
+      position: {x: -0, y: .28383553, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:R_clavicle_joint
+      position: {x: -.133156002, y: .28136608, z: 5.01971974e-17}
+      rotation: {x: 1, y: -0, z: 0, w: -6.12323426e-17}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:R_shoulder_joint
+      position: {x: -.178633004, y: -.00137999991, z: -1.43784253e-16}
+      rotation: {x: 1, y: 0, z: -0, w: 6.12323426e-17}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:R_elbow_joint
+      position: {x: -.337642998, y: 1.77635673e-16, z: 8.26986788e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:R_hand_joint
+      position: {x: -.373645157, y: 0, z: 9.19813459e-17}
+      rotation: {x: 0, y: -.0196554065, z: -0, w: .999806821}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:R_middle_finger_joint
+      position: {x: -.152602926, y: 2.1365875e-05, z: 1.27653511e-05}
+      rotation: {x: -.273147225, y: .640980244, z: .652219713, w: -.298570514}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:R_pinky_finger_joint
+      position: {x: -.14997825, y: 2.1365875e-05, z: .0667415112}
+      rotation: {x: -.273147225, y: .640980244, z: .652219713, w: -.298570514}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:R_thumb_finger_joint
+      position: {x: -.116117656, y: 3.55271347e-16, z: -.0985178649}
+      rotation: {x: -.478715867, y: .678160369, z: .551983535, w: -.079017885}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:L_clavicle_joint
+      position: {x: .133155942, y: .281366944, z: 5.01972106e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:L_shoulder_joint
+      position: {x: .178632572, y: .00137449196, z: 5.644838e-17}
+      rotation: {x: -4.32978063e-17, y: .707106829, z: -.707106829, w: 4.32978063e-17}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:L_elbow_joint
+      position: {x: -.337643176, y: 8.26987251e-17, z: 7.10542693e-16}
+      rotation: {x: 0, y: 2.83276934e-16, z: 6.12323426e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint1
+      position: {x: -.313685775, y: -7.88860858e-32, z: 3.55271347e-16}
+      rotation: {x: -4.32978063e-17, y: .707106829, z: -.707106829, w: 4.32978063e-17}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:waist_joint
+      position: {x: 4.93038036e-33, y: -.0349125564, z: 8.49769401e-35}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:L_hip_joint
+      position: {x: .107988052, y: -.056051597, z: -2.40771531e-17}
+      rotation: {x: -.499154657, y: -.499136955, z: .500843883, w: .500861585}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:L_knee_joint
+      position: {x: -.229675934, y: -5.91645644e-32, z: -6.66133775e-17}
+      rotation: {x: -2.69335872e-31, y: -2.04417621e-30, z: .00872653536, w: .999961913}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:L_ankle_shadow_joint
+      position: {x: -.335235149, y: 1.3877787e-18, z: -1.11022296e-16}
+      rotation: {x: 0, y: 0, z: -.00872653536, w: .999961913}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:L_foot_shadow_joint
+      position: {x: -0, y: 2.35922399e-17, z: -4.44089183e-17}
+      rotation: {x: -8.32667268e-17, y: -5.55111512e-17, z: -1.66533454e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:L_toe_shadow_joint
+      position: {x: -.0338267684, y: .138891831, z: -2.22044592e-16}
+      rotation: {x: .5, y: -.5, z: -.5, w: .5}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:R_hip_joint
+      position: {x: -.107988, y: -.0560513809, z: -7.69760315e-17}
+      rotation: {x: .500861526, y: -.500843883, z: -.499136984, w: .499154687}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:R_knee_joint
+      position: {x: .229676008, y: -2.54991593e-17, z: 1.77635673e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:R_ankle
+      position: {x: .335184187, y: .00585065968, z: 2.6645351e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:R_foot_shadow_joint
+      position: {x: 5.55111479e-18, y: -3.26128e-17, z: 6.66133775e-17}
+      rotation: {x: -3.1918912e-14, y: -4.16333634e-16, z: 2.77555756e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: J_Robot_Rig:R_toe_shadow_joint
+      position: {x: .0338268094, y: -.138891652, z: 9.05941971e-15}
+      rotation: {x: .5, y: -.5, z: -.5, w: .5}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  additionalBone: 0
+  userData: 

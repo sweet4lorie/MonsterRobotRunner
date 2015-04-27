@@ -1,0 +1,201 @@
+fileFormatVersion: 2
+guid: 8ff511262d65f4a8f8e90ba63bf69ac3
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: H_Monster_Rig:bottom_jaw_joint
+    100002: H_Monster_Rig:chest_joint
+    100004: H_Monster_Rig:Geo
+    100006: H_Monster_Rig:H_monster_geo_group
+    100008: H_Monster_Rig:H_monster_joint_group
+    100010: H_Monster_Rig:head_joint
+    100012: H_Monster_Rig:L_ankle_joint
+    100014: H_Monster_Rig:L_foot_shadow_joint
+    100016: H_Monster_Rig:L_hip_joint
+    100018: H_Monster_Rig:L_knee_joint
+    100020: H_Monster_Rig:L_toe_shadow_joint
+    100022: H_Monster_Rig:neck_joint
+    100024: H_Monster_Rig:R_ankle_joint
+    100026: H_Monster_Rig:R_foot_shadow_joint
+    100028: H_Monster_Rig:R_hip_joint
+    100030: H_Monster_Rig:R_knee_joint
+    100032: H_Monster_Rig:R_toe_shadow_joint
+    100034: H_Monster_Rig:ROOT
+    100036: H_Monster_Rig:root_joint
+    100038: H_Monster_Rig:root_joint_group
+    100040: H_Monster_Rig:tail_1_joint
+    100042: H_Monster_Rig:tail_2_joint
+    100044: H_Monster_Rig:tongue_1_joint
+    100046: H_Monster_Rig:tongue_2_joint
+    100048: H_Monster_Rig:top_jaw_joint
+    100050: H_Monster_Rig:waist_2_joint
+    100052: H_Monster_Rig:waist_joint
+    100054: //RootNode
+    400000: H_Monster_Rig:bottom_jaw_joint
+    400002: H_Monster_Rig:chest_joint
+    400004: H_Monster_Rig:Geo
+    400006: H_Monster_Rig:H_monster_geo_group
+    400008: H_Monster_Rig:H_monster_joint_group
+    400010: H_Monster_Rig:head_joint
+    400012: H_Monster_Rig:L_ankle_joint
+    400014: H_Monster_Rig:L_foot_shadow_joint
+    400016: H_Monster_Rig:L_hip_joint
+    400018: H_Monster_Rig:L_knee_joint
+    400020: H_Monster_Rig:L_toe_shadow_joint
+    400022: H_Monster_Rig:neck_joint
+    400024: H_Monster_Rig:R_ankle_joint
+    400026: H_Monster_Rig:R_foot_shadow_joint
+    400028: H_Monster_Rig:R_hip_joint
+    400030: H_Monster_Rig:R_knee_joint
+    400032: H_Monster_Rig:R_toe_shadow_joint
+    400034: H_Monster_Rig:ROOT
+    400036: H_Monster_Rig:root_joint
+    400038: H_Monster_Rig:root_joint_group
+    400040: H_Monster_Rig:tail_1_joint
+    400042: H_Monster_Rig:tail_2_joint
+    400044: H_Monster_Rig:tongue_1_joint
+    400046: H_Monster_Rig:tongue_2_joint
+    400048: H_Monster_Rig:top_jaw_joint
+    400050: H_Monster_Rig:waist_2_joint
+    400052: H_Monster_Rig:waist_joint
+    400054: //RootNode
+    4300000: H_Monster_Rig:Geo
+    7400000: pullfront
+    9500000: //RootNode
+    13700000: H_Monster_Rig:Geo
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: pullfront
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 6
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: .5
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: H_Monster_Rig:H_monster_geo_group
+        weight: 1
+      - path: H_Monster_Rig:H_monster_geo_group/H_Monster_Rig:Geo
+        weight: 1
+      - path: H_Monster_Rig:H_monster_joint_group
+        weight: 1
+      - path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group
+        weight: 1
+      - path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT
+        weight: 1
+      - path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint
+        weight: 1
+      - path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_2_joint
+        weight: 1
+      - path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_2_joint/H_Monster_Rig:chest_joint
+        weight: 1
+      - path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_2_joint/H_Monster_Rig:chest_joint/H_Monster_Rig:neck_joint
+        weight: 1
+      - path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_2_joint/H_Monster_Rig:chest_joint/H_Monster_Rig:neck_joint/H_Monster_Rig:head_joint
+        weight: 1
+      - path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_2_joint/H_Monster_Rig:chest_joint/H_Monster_Rig:neck_joint/H_Monster_Rig:head_joint/H_Monster_Rig:bottom_jaw_joint
+        weight: 1
+      - path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_2_joint/H_Monster_Rig:chest_joint/H_Monster_Rig:neck_joint/H_Monster_Rig:head_joint/H_Monster_Rig:tongue_1_joint
+        weight: 1
+      - path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_2_joint/H_Monster_Rig:chest_joint/H_Monster_Rig:neck_joint/H_Monster_Rig:head_joint/H_Monster_Rig:tongue_1_joint/H_Monster_Rig:tongue_2_joint
+        weight: 1
+      - path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_2_joint/H_Monster_Rig:chest_joint/H_Monster_Rig:neck_joint/H_Monster_Rig:head_joint/H_Monster_Rig:top_jaw_joint
+        weight: 1
+      - path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_joint
+        weight: 1
+      - path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_joint/H_Monster_Rig:L_hip_joint
+        weight: 1
+      - path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_joint/H_Monster_Rig:L_hip_joint/H_Monster_Rig:L_knee_joint
+        weight: 1
+      - path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_joint/H_Monster_Rig:L_hip_joint/H_Monster_Rig:L_knee_joint/H_Monster_Rig:L_ankle_joint
+        weight: 1
+      - path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_joint/H_Monster_Rig:L_hip_joint/H_Monster_Rig:L_knee_joint/H_Monster_Rig:L_ankle_joint/H_Monster_Rig:L_foot_shadow_joint
+        weight: 1
+      - path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_joint/H_Monster_Rig:L_hip_joint/H_Monster_Rig:L_knee_joint/H_Monster_Rig:L_ankle_joint/H_Monster_Rig:L_foot_shadow_joint/H_Monster_Rig:L_toe_shadow_joint
+        weight: 1
+      - path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_joint/H_Monster_Rig:R_hip_joint
+        weight: 1
+      - path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_joint/H_Monster_Rig:R_hip_joint/H_Monster_Rig:R_knee_joint
+        weight: 1
+      - path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_joint/H_Monster_Rig:R_hip_joint/H_Monster_Rig:R_knee_joint/H_Monster_Rig:R_ankle_joint
+        weight: 1
+      - path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_joint/H_Monster_Rig:R_hip_joint/H_Monster_Rig:R_knee_joint/H_Monster_Rig:R_ankle_joint/H_Monster_Rig:R_foot_shadow_joint
+        weight: 1
+      - path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_joint/H_Monster_Rig:R_hip_joint/H_Monster_Rig:R_knee_joint/H_Monster_Rig:R_ankle_joint/H_Monster_Rig:R_foot_shadow_joint/H_Monster_Rig:R_toe_shadow_joint
+        weight: 1
+      - path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_joint/H_Monster_Rig:tail_1_joint
+        weight: 1
+      - path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_joint/H_Monster_Rig:tail_1_joint/H_Monster_Rig:tail_2_joint
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .100000001
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: H_Monster_Rig:ROOT
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

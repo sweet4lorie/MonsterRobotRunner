@@ -97,7 +97,7 @@ ModelImporter:
     13700010: C_Robot_Rig:R_hand_geo
     13700012: C_Robot_Rig:R_shoulder_geo
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:
@@ -117,8 +117,8 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: .100000001
     meshCompression: 0
-    addColliders: 1
-    importBlendShapes: 1
+    addColliders: 0
+    importBlendShapes: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1

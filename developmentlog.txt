@@ -5,6 +5,183 @@ Oh Snap!
 * Niyaz Mahmud
 
 
+key = [actual hours]
+
+
+2015-4-1
+=========
+
+Previous Week's Objectives
+----------------------------
+
+* Reimport and test New/Old Animations 6 h
+ > Add H-Monster Animations
+ > Set-up connections for animations
+ > Connect all animations
+ > Emily & Brian
+
+* [Completed] In-Game UI Artwork 5 h [5 h]
+ > implement bg
+ > pull/jump buttons
+ > Emily
+
+* Add power-ups into Level 3 h
+ > place power-ups into level
+ > replace with appropriate models
+ > fix code to handle
+ > Emily & Brian
+
+* Continue building networking component 5 h
+ > building foundations for finding and connecting
+ > Brian
+
+* Fix bugs 5 h
+ > jump fix (use ray cast)
+ > code clean-up
+ > revisit jump/run speed
+ > Brian & Emily
+
+* Artist Update
+ > Texture H-Robot
+ > Low Poly Power-up Texture
+ > Low poly Bomb and setup for Start Screen
+ > Cinematic - Render/Paint Background for Scene 1 & 2
+ > Cinematic - Render/Paint H-Monster
+ > Cinematic - Animations
+ > Cut Scenes - Render/Paint Monster Mother Ship
+ > Cut Scenes - Model Robot Mother Ship
+ > Cut Scenes - Environment Building
+
+
+This Week's Objectives
+----------------------------
+
+* Finish building networking component
+ > Brian
+
+* In-game UI
+ > Brian & Emily
+
+* Start/Transition UI
+ > Brian & Niyaz & Emily
+
+* Fix bugs
+ > Brian & Emily
+
+* Artist Update
+ > Texture H-Robot
+ > Low Poly Power-up Texture
+ > Low poly Bomb and setup for Start Screen
+ > Foreground texture revision
+ > Cinematic - Render/Paint Background for Scene 1 & 2
+ > Cinematic - Render/Paint H-Monster
+ > Cinematic - Render/Paint J-Robot
+ > Cinematic - Animations
+ > Cut Scenes - Render/Paint Monster Mother Ship
+ > Cut Scenes - Model Robot Mother Ship
+ > Cut Scenes - Environment Building
+ > Cut Scenes - Animations
+
+
+
+
+2015-3-25
+=========
+
+Previous Week's Objectives
+----------------------------
+
+* [Unfinished] Reimport and test New/Old Animations 6 h
+ > Add H-Monster Animations
+ > Set-up connections for animations
+ > Connect all animations
+ > Emily & Brian
+
+* [Completed] Finish H-Monster Cinematic Rig 7 h [12 h]
+ > Finish skinning
+ > Building facial controls and clean
+ > Emily
+
+* [Completed] Test Level and import textures 5 h [5 h]
+ > Import all building textures
+ > Test and edit levels
+ > Emily
+
+* [Completed] Finish randomization of levels 3 h [5 h]
+ > Randomize prefabs of 3 levels
+ > Be able to switch between levels
+ > Brian
+
+* [Unfinished] Start UI building 5 h
+ > Start screen, credit
+ > Character selection screen
+ > Niyaz and Brian
+
+* [Completed] Start building networking component 4 h [2 h]
+ > Brainstorm how connection will work
+ > Start building foundations for finding and connecting
+ > Brian
+
+* [Completed] Finish power ups 5 h [5 h]
+ > fix speed-up for foreground and background
+ > Brian
+
+* Artist Update
+ > Texture Characters [1/2 Completed]
+ > Low Poly Power-up Model [Completed]
+ > BG Painted Texture
+ > Low poly Bomb and setup for Start Screen
+ > Cinematic - Render/Paint Background for Scene 1
+ > Cinematic - Model Background for Scene 2 [Completed]
+ > Cinematic - Render/Paint H-Monster
+ > Cut Scenes - Model Monster Mother Ship [Completed]
+ > Cut Scenes - Model Robot Mother Ship
+ > Cut Scenes - Start Animations [Completed]
+
+
+
+This Week's Objectives
+----------------------------
+
+* Reimport and test New/Old Animations 6 h
+ > Add H-Monster Animations
+ > Set-up connections for animations
+ > Connect all animations
+ > Emily & Brian
+
+* In-Game UI Artwork 5 h
+ > implement bg
+ > pull/jump buttons
+ > Emily
+
+* Add power-ups into Level 3 h
+ > place power-ups into level
+ > replace with appropriate models
+ > fix code to handle
+ > Emily & Brian
+
+* Continue building networking component 5 h
+ > building foundations for finding and connecting
+ > Brian
+
+* Fix bugs 5 h
+ > jump fix (use ray cast)
+ > code clean-up
+ > revisit jump/run speed
+ > Brian & Emily
+
+* Artist Update
+ > Texture H-Robot
+ > Low Poly Power-up Texture
+ > Low poly Bomb and setup for Start Screen
+ > Cinematic - Render/Paint Background for Scene 1 & 2
+ > Cinematic - Render/Paint H-Monster
+ > Cut Scenes - Render/Paint Monster Mother Ship
+ > Cut Scenes - Model Robot Mother Ship
+ > Cut Scenes - Environment Building
+
+
+
 2015-3-18
 =========
 

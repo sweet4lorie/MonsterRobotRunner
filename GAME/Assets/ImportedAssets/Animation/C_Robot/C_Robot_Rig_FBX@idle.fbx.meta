@@ -1,0 +1,257 @@
+fileFormatVersion: 2
+guid: ecdde7d3b729244619e7a2dc7bc8146a
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: bottom_geo
+    100002: C_Robot_Geo
+    100004: C_Robot_Joint
+    100006: //RootNode
+    100008: chest_geo
+    100010: chest_joint
+    100012: head_geo
+    100014: head_joint
+    100016: L_ankle_joint
+    100018: L_clavicle_joint
+    100020: L_claw_1_joint
+    100022: L_claw_2_joint
+    100024: L_elbow_joint
+    100026: L_foot_shadow
+    100028: L_hand_geo
+    100030: L_hand_joint
+    100032: L_hip_joint
+    100034: L_knee_joint
+    100036: L_shoulder_geo
+    100038: L_shoulder_joint
+    100040: L_toe_shadow
+    100042: R_ankle_joint
+    100044: R_clavicle_joint
+    100046: R_claw_1_joint
+    100048: R_claw_2_joint
+    100050: R_elbow_joint
+    100052: R_foot_shadow
+    100054: R_hand_geo
+    100056: R_hand_joint
+    100058: R_hip_joint
+    100060: R_knee_joint
+    100062: R_shoulder_geo
+    100064: R_shoulder_joint
+    100066: R_toe_shadow
+    100068: ROOT_JOINT
+    100070: root_joint
+    100072: root_joint_group
+    100074: torso_joint
+    100076: waist_joint
+    400000: bottom_geo
+    400002: C_Robot_Geo
+    400004: C_Robot_Joint
+    400006: //RootNode
+    400008: chest_geo
+    400010: chest_joint
+    400012: head_geo
+    400014: head_joint
+    400016: L_ankle_joint
+    400018: L_clavicle_joint
+    400020: L_claw_1_joint
+    400022: L_claw_2_joint
+    400024: L_elbow_joint
+    400026: L_foot_shadow
+    400028: L_hand_geo
+    400030: L_hand_joint
+    400032: L_hip_joint
+    400034: L_knee_joint
+    400036: L_shoulder_geo
+    400038: L_shoulder_joint
+    400040: L_toe_shadow
+    400042: R_ankle_joint
+    400044: R_clavicle_joint
+    400046: R_claw_1_joint
+    400048: R_claw_2_joint
+    400050: R_elbow_joint
+    400052: R_foot_shadow
+    400054: R_hand_geo
+    400056: R_hand_joint
+    400058: R_hip_joint
+    400060: R_knee_joint
+    400062: R_shoulder_geo
+    400064: R_shoulder_joint
+    400066: R_toe_shadow
+    400068: ROOT_JOINT
+    400070: root_joint
+    400072: root_joint_group
+    400074: torso_joint
+    400076: waist_joint
+    4300000: R_hand_geo
+    4300002: R_shoulder_geo
+    4300004: L_hand_geo
+    4300006: L_shoulder_geo
+    4300008: head_geo
+    4300010: chest_geo
+    4300012: bottom_geo
+    7400000: idle
+    9500000: //RootNode
+    13700000: bottom_geo
+    13700002: chest_geo
+    13700004: head_geo
+    13700006: L_hand_geo
+    13700008: L_shoulder_geo
+    13700010: R_hand_geo
+    13700012: R_shoulder_geo
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idle
+      takeName: Take 001
+      firstFrame: 2
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: C_Robot_Geo
+        weight: 1
+      - path: C_Robot_Geo/bottom_geo
+        weight: 1
+      - path: C_Robot_Geo/chest_geo
+        weight: 1
+      - path: C_Robot_Geo/head_geo
+        weight: 1
+      - path: C_Robot_Geo/L_hand_geo
+        weight: 1
+      - path: C_Robot_Geo/L_shoulder_geo
+        weight: 1
+      - path: C_Robot_Geo/R_hand_geo
+        weight: 1
+      - path: C_Robot_Geo/R_shoulder_geo
+        weight: 1
+      - path: C_Robot_Joint
+        weight: 1
+      - path: C_Robot_Joint/root_joint_group
+        weight: 1
+      - path: C_Robot_Joint/root_joint_group/ROOT_JOINT
+        weight: 1
+      - path: C_Robot_Joint/root_joint_group/ROOT_JOINT/root_joint
+        weight: 1
+      - path: C_Robot_Joint/root_joint_group/ROOT_JOINT/root_joint/torso_joint
+        weight: 1
+      - path: C_Robot_Joint/root_joint_group/ROOT_JOINT/root_joint/torso_joint/chest_joint
+        weight: 1
+      - path: C_Robot_Joint/root_joint_group/ROOT_JOINT/root_joint/torso_joint/chest_joint/head_joint
+        weight: 1
+      - path: C_Robot_Joint/root_joint_group/ROOT_JOINT/root_joint/torso_joint/chest_joint/L_clavicle_joint
+        weight: 1
+      - path: C_Robot_Joint/root_joint_group/ROOT_JOINT/root_joint/torso_joint/chest_joint/L_clavicle_joint/L_shoulder_joint
+        weight: 1
+      - path: C_Robot_Joint/root_joint_group/ROOT_JOINT/root_joint/torso_joint/chest_joint/L_clavicle_joint/L_shoulder_joint/L_elbow_joint
+        weight: 1
+      - path: C_Robot_Joint/root_joint_group/ROOT_JOINT/root_joint/torso_joint/chest_joint/L_clavicle_joint/L_shoulder_joint/L_elbow_joint/L_hand_joint
+        weight: 1
+      - path: C_Robot_Joint/root_joint_group/ROOT_JOINT/root_joint/torso_joint/chest_joint/L_clavicle_joint/L_shoulder_joint/L_elbow_joint/L_hand_joint/L_claw_1_joint
+        weight: 1
+      - path: C_Robot_Joint/root_joint_group/ROOT_JOINT/root_joint/torso_joint/chest_joint/L_clavicle_joint/L_shoulder_joint/L_elbow_joint/L_hand_joint/L_claw_2_joint
+        weight: 1
+      - path: C_Robot_Joint/root_joint_group/ROOT_JOINT/root_joint/torso_joint/chest_joint/R_clavicle_joint
+        weight: 1
+      - path: C_Robot_Joint/root_joint_group/ROOT_JOINT/root_joint/torso_joint/chest_joint/R_clavicle_joint/R_shoulder_joint
+        weight: 1
+      - path: C_Robot_Joint/root_joint_group/ROOT_JOINT/root_joint/torso_joint/chest_joint/R_clavicle_joint/R_shoulder_joint/R_elbow_joint
+        weight: 1
+      - path: C_Robot_Joint/root_joint_group/ROOT_JOINT/root_joint/torso_joint/chest_joint/R_clavicle_joint/R_shoulder_joint/R_elbow_joint/R_hand_joint
+        weight: 1
+      - path: C_Robot_Joint/root_joint_group/ROOT_JOINT/root_joint/torso_joint/chest_joint/R_clavicle_joint/R_shoulder_joint/R_elbow_joint/R_hand_joint/R_claw_1_joint
+        weight: 1
+      - path: C_Robot_Joint/root_joint_group/ROOT_JOINT/root_joint/torso_joint/chest_joint/R_clavicle_joint/R_shoulder_joint/R_elbow_joint/R_hand_joint/R_claw_2_joint
+        weight: 1
+      - path: C_Robot_Joint/root_joint_group/ROOT_JOINT/root_joint/waist_joint
+        weight: 1
+      - path: C_Robot_Joint/root_joint_group/ROOT_JOINT/root_joint/waist_joint/L_hip_joint
+        weight: 1
+      - path: C_Robot_Joint/root_joint_group/ROOT_JOINT/root_joint/waist_joint/L_hip_joint/L_knee_joint
+        weight: 1
+      - path: C_Robot_Joint/root_joint_group/ROOT_JOINT/root_joint/waist_joint/L_hip_joint/L_knee_joint/L_ankle_joint
+        weight: 1
+      - path: C_Robot_Joint/root_joint_group/ROOT_JOINT/root_joint/waist_joint/L_hip_joint/L_knee_joint/L_ankle_joint/L_foot_shadow
+        weight: 1
+      - path: C_Robot_Joint/root_joint_group/ROOT_JOINT/root_joint/waist_joint/L_hip_joint/L_knee_joint/L_ankle_joint/L_foot_shadow/L_toe_shadow
+        weight: 1
+      - path: C_Robot_Joint/root_joint_group/ROOT_JOINT/root_joint/waist_joint/R_hip_joint
+        weight: 1
+      - path: C_Robot_Joint/root_joint_group/ROOT_JOINT/root_joint/waist_joint/R_hip_joint/R_knee_joint
+        weight: 1
+      - path: C_Robot_Joint/root_joint_group/ROOT_JOINT/root_joint/waist_joint/R_hip_joint/R_knee_joint/R_ankle_joint
+        weight: 1
+      - path: C_Robot_Joint/root_joint_group/ROOT_JOINT/root_joint/waist_joint/R_hip_joint/R_knee_joint/R_foot_shadow
+        weight: 1
+      - path: C_Robot_Joint/root_joint_group/ROOT_JOINT/root_joint/waist_joint/R_hip_joint/R_knee_joint/R_foot_shadow/R_toe_shadow
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .100000001
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 1
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

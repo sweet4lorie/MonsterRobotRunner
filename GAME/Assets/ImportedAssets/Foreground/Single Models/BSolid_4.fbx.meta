@@ -12,10 +12,9 @@ ModelImporter:
     2300000: B_Solid_4
     3300000: B_Solid_4
     4300000: B_Solid_4
-    6400000: B_Solid_4
     9500000: //RootNode
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:
@@ -35,8 +34,8 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: .100000001
     meshCompression: 0
-    addColliders: 1
-    importBlendShapes: 1
+    addColliders: 0
+    importBlendShapes: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1

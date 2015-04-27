@@ -21,20 +21,20 @@ ModelImporter:
     100030: H_Robot_Rig:L_shoulder_geo
     100032: H_Robot_Rig:L_shoulder_joint
     100034: H_Robot_Rig:L_toe_shadow_joint
-    100036: H_Robot_Rig:R_ankle_shadow_joint
-    100038: H_Robot_Rig:R_clavicle_joint
-    100040: H_Robot_Rig:R_claw1_joint
-    100042: H_Robot_Rig:R_claw2_joint
-    100044: H_Robot_Rig:R_elbow_joint
-    100046: H_Robot_Rig:R_foot_shadow_joint
-    100048: H_Robot_Rig:R_hand_geo
-    100050: H_Robot_Rig:R_hand_joint
-    100052: H_Robot_Rig:R_hip_joint
-    100054: H_Robot_Rig:R_knee_joint
-    100056: H_Robot_Rig:R_shoulder_geo
-    100058: H_Robot_Rig:R_shoulder_joint
-    100060: H_Robot_Rig:R_toe_shadow_joint
-    100062: H_Robot_Rig:ROOT_JOINT
+    100036: H_Robot_Rig:Master_Root_joint
+    100038: H_Robot_Rig:R_ankle_shadow_joint
+    100040: H_Robot_Rig:R_clavicle_joint
+    100042: H_Robot_Rig:R_claw1_joint
+    100044: H_Robot_Rig:R_claw2_joint
+    100046: H_Robot_Rig:R_elbow_joint
+    100048: H_Robot_Rig:R_foot_shadow_joint
+    100050: H_Robot_Rig:R_hand_geo
+    100052: H_Robot_Rig:R_hand_joint
+    100054: H_Robot_Rig:R_hip_joint
+    100056: H_Robot_Rig:R_knee_joint
+    100058: H_Robot_Rig:R_shoulder_geo
+    100060: H_Robot_Rig:R_shoulder_joint
+    100062: H_Robot_Rig:R_toe_shadow_joint
     100064: H_Robot_Rig:root_joint
     100066: H_Robot_Rig:root_joint_group
     100068: H_Robot_Rig:waist_2_joint
@@ -59,32 +59,32 @@ ModelImporter:
     400030: H_Robot_Rig:L_shoulder_geo
     400032: H_Robot_Rig:L_shoulder_joint
     400034: H_Robot_Rig:L_toe_shadow_joint
-    400036: H_Robot_Rig:R_ankle_shadow_joint
-    400038: H_Robot_Rig:R_clavicle_joint
-    400040: H_Robot_Rig:R_claw1_joint
-    400042: H_Robot_Rig:R_claw2_joint
-    400044: H_Robot_Rig:R_elbow_joint
-    400046: H_Robot_Rig:R_foot_shadow_joint
-    400048: H_Robot_Rig:R_hand_geo
-    400050: H_Robot_Rig:R_hand_joint
-    400052: H_Robot_Rig:R_hip_joint
-    400054: H_Robot_Rig:R_knee_joint
-    400056: H_Robot_Rig:R_shoulder_geo
-    400058: H_Robot_Rig:R_shoulder_joint
-    400060: H_Robot_Rig:R_toe_shadow_joint
-    400062: H_Robot_Rig:ROOT_JOINT
+    400036: H_Robot_Rig:Master_Root_joint
+    400038: H_Robot_Rig:R_ankle_shadow_joint
+    400040: H_Robot_Rig:R_clavicle_joint
+    400042: H_Robot_Rig:R_claw1_joint
+    400044: H_Robot_Rig:R_claw2_joint
+    400046: H_Robot_Rig:R_elbow_joint
+    400048: H_Robot_Rig:R_foot_shadow_joint
+    400050: H_Robot_Rig:R_hand_geo
+    400052: H_Robot_Rig:R_hand_joint
+    400054: H_Robot_Rig:R_hip_joint
+    400056: H_Robot_Rig:R_knee_joint
+    400058: H_Robot_Rig:R_shoulder_geo
+    400060: H_Robot_Rig:R_shoulder_joint
+    400062: H_Robot_Rig:R_toe_shadow_joint
     400064: H_Robot_Rig:root_joint
     400066: H_Robot_Rig:root_joint_group
     400068: H_Robot_Rig:waist_2_joint
     400070: H_Robot_Rig:waist_geo
     400072: H_Robot_Rig:waist_joint
     400074: //RootNode
-    4300000: H_Robot_Rig:R_shoulder_geo
-    4300002: H_Robot_Rig:R_hand_geo
-    4300004: H_Robot_Rig:L_hand_geo
+    4300000: H_Robot_Rig:R_hand_geo
+    4300002: H_Robot_Rig:L_hand_geo
+    4300004: H_Robot_Rig:R_shoulder_geo
     4300006: H_Robot_Rig:L_shoulder_geo
-    4300008: H_Robot_Rig:waist_geo
-    4300010: H_Robot_Rig:bottom_geo
+    4300008: H_Robot_Rig:bottom_geo
+    4300010: H_Robot_Rig:waist_geo
     9500000: //RootNode
     13700000: H_Robot_Rig:bottom_geo
     13700002: H_Robot_Rig:L_hand_geo
@@ -93,7 +93,7 @@ ModelImporter:
     13700008: H_Robot_Rig:R_shoulder_geo
     13700010: H_Robot_Rig:waist_geo
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:
@@ -114,7 +114,7 @@ ModelImporter:
     globalScale: .100000001
     meshCompression: 0
     addColliders: 0
-    importBlendShapes: 1
+    importBlendShapes: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -133,7 +133,7 @@ ModelImporter:
   copyAvatar: 0
   humanDescription:
     human:
-    - boneName: H_Robot_Rig:root_joint
+    - boneName: H_Robot_Rig:root_joint_group
       humanName: Hips
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -300,37 +300,37 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: H_Robot_Rig:H_robot_geo_group
-      position: {x: 0, y: .00489660492, z: 0}
+      position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: H_Robot_Rig:bottom_geo
-      position: {x: -0, y: -.00489660492, z: 0}
+      position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: H_Robot_Rig:L_hand_geo
-      position: {x: -0, y: -.00489660492, z: 0}
+      position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: H_Robot_Rig:L_shoulder_geo
-      position: {x: -0, y: -.00489660492, z: 0}
+      position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: H_Robot_Rig:R_hand_geo
-      position: {x: -0, y: -.00489660492, z: 0}
+      position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: H_Robot_Rig:R_shoulder_geo
-      position: {x: -0, y: -.00489660492, z: 0}
+      position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: H_Robot_Rig:waist_geo
-      position: {x: -0, y: -.000362711464, z: 0}
+      position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
@@ -344,9 +344,9 @@ ModelImporter:
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
-    - name: H_Robot_Rig:ROOT_JOINT
-      position: {x: -0, y: 0, z: -.0436141491}
-      rotation: {x: 0, y: -1.11022302e-16, z: -0, w: 1}
+    - name: H_Robot_Rig:Master_Root_joint
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: H_Robot_Rig:root_joint
@@ -366,7 +366,7 @@ ModelImporter:
       transformModified: 1
     - name: H_Robot_Rig:L_knee_joint
       position: {x: -.251479, y: 2.79197776e-17, z: -1.55431221e-16}
-      rotation: {x: 3.90389691e-31, y: -5.70394359e-30, z: .0920279771, w: .995756447}
+      rotation: {x: 0, y: 0, z: .0920279771, w: .995756447}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: H_Robot_Rig:L_ankle_shadow_joint

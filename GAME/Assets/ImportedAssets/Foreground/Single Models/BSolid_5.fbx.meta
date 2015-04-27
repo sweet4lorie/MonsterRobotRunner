@@ -12,7 +12,6 @@ ModelImporter:
     2300000: BSolid_5 1
     3300000: BSolid_5 1
     4300000: BSolid_5
-    6400000: BSolid_5 1
     9500000: //RootNode
   materials:
     importMaterials: 0
@@ -35,8 +34,8 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: .100000001
     meshCompression: 0
-    addColliders: 1
-    importBlendShapes: 1
+    addColliders: 0
+    importBlendShapes: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1

@@ -1,0 +1,137 @@
+fileFormatVersion: 2
+guid: cbcc89c95f52d4007a91e74789f6046a
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: button_geo
+    100002: button_joint
+    100004: control_panel_geo_group
+    100006: control_panel_joint_group
+    100008: //RootNode
+    100010: group1
+    100012: main_joint
+    100014: panel_geo
+    100016: panel_joint
+    100018: title_gep
+    100020: title_joint
+    400000: button_geo
+    400002: button_joint
+    400004: control_panel_geo_group
+    400006: control_panel_joint_group
+    400008: //RootNode
+    400010: group1
+    400012: main_joint
+    400014: panel_geo
+    400016: panel_joint
+    400018: title_gep
+    400020: title_joint
+    4300000: button_geo
+    4300002: panel_geo
+    4300004: title_gep
+    7400000: titleDrop
+    9500000: //RootNode
+    13700000: button_geo
+    13700002: panel_geo
+    13700004: title_gep
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: titleDrop
+      takeName: Take 001
+      firstFrame: 17
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: control_panel_joint_group
+        weight: 1
+      - path: control_panel_joint_group/main_joint
+        weight: 1
+      - path: control_panel_joint_group/main_joint/panel_joint
+        weight: 1
+      - path: control_panel_joint_group/main_joint/panel_joint/button_joint
+        weight: 1
+      - path: control_panel_joint_group/main_joint/panel_joint/title_joint
+        weight: 1
+      - path: group1
+        weight: 1
+      - path: group1/control_panel_geo_group
+        weight: 1
+      - path: group1/control_panel_geo_group/button_geo
+        weight: 1
+      - path: group1/control_panel_geo_group/panel_geo
+        weight: 1
+      - path: group1/control_panel_geo_group/title_gep
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .5
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: main_joint
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

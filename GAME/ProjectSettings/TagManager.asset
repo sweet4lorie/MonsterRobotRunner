@@ -4,6 +4,11 @@
 TagManager:
   tags:
   - Powerup
+  - SelectionChar1
+  - Floor
+  - SelectionChar2
+  - SelectionChar3
+  - SelectionChar4
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

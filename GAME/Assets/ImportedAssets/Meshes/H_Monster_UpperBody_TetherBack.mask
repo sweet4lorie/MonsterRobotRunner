@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1011 &101100000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: H_Monster_UpperBody_TetherBack
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: H_Monster_Rig:H_monster_geo_group
+    m_Weight: 1
+  - m_Path: H_Monster_Rig:H_monster_geo_group/H_Monster_Rig:Geo
+    m_Weight: 1
+  - m_Path: H_Monster_Rig:H_monster_joint_group
+    m_Weight: 1
+  - m_Path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group
+    m_Weight: 1
+  - m_Path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT
+    m_Weight: 1
+  - m_Path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint
+    m_Weight: 1
+  - m_Path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_2_joint
+    m_Weight: 1
+  - m_Path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_2_joint/H_Monster_Rig:chest_joint
+    m_Weight: 1
+  - m_Path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_2_joint/H_Monster_Rig:chest_joint/H_Monster_Rig:neck_joint
+    m_Weight: 1
+  - m_Path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_2_joint/H_Monster_Rig:chest_joint/H_Monster_Rig:neck_joint/H_Monster_Rig:head_joint
+    m_Weight: 1
+  - m_Path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_2_joint/H_Monster_Rig:chest_joint/H_Monster_Rig:neck_joint/H_Monster_Rig:head_joint/H_Monster_Rig:bottom_jaw_joint
+    m_Weight: 1
+  - m_Path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_2_joint/H_Monster_Rig:chest_joint/H_Monster_Rig:neck_joint/H_Monster_Rig:head_joint/H_Monster_Rig:tongue_1_joint
+    m_Weight: 1
+  - m_Path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_2_joint/H_Monster_Rig:chest_joint/H_Monster_Rig:neck_joint/H_Monster_Rig:head_joint/H_Monster_Rig:tongue_1_joint/H_Monster_Rig:tongue_2_joint
+    m_Weight: 1
+  - m_Path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_2_joint/H_Monster_Rig:chest_joint/H_Monster_Rig:neck_joint/H_Monster_Rig:head_joint/H_Monster_Rig:top_jaw_joint
+    m_Weight: 1
+  - m_Path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_joint
+    m_Weight: 1
+  - m_Path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_joint/H_Monster_Rig:L_hip_joint
+    m_Weight: 0
+  - m_Path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_joint/H_Monster_Rig:L_hip_joint/H_Monster_Rig:L_knee_joint
+    m_Weight: 0
+  - m_Path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_joint/H_Monster_Rig:L_hip_joint/H_Monster_Rig:L_knee_joint/H_Monster_Rig:L_ankle_joint
+    m_Weight: 0
+  - m_Path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_joint/H_Monster_Rig:L_hip_joint/H_Monster_Rig:L_knee_joint/H_Monster_Rig:L_ankle_joint/H_Monster_Rig:L_foot_shadow_joint
+    m_Weight: 0
+  - m_Path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_joint/H_Monster_Rig:L_hip_joint/H_Monster_Rig:L_knee_joint/H_Monster_Rig:L_ankle_joint/H_Monster_Rig:L_foot_shadow_joint/H_Monster_Rig:L_toe_shadow_joint
+    m_Weight: 0
+  - m_Path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_joint/H_Monster_Rig:R_hip_joint
+    m_Weight: 0
+  - m_Path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_joint/H_Monster_Rig:R_hip_joint/H_Monster_Rig:R_knee_joint
+    m_Weight: 0
+  - m_Path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_joint/H_Monster_Rig:R_hip_joint/H_Monster_Rig:R_knee_joint/H_Monster_Rig:R_ankle_joint
+    m_Weight: 0
+  - m_Path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_joint/H_Monster_Rig:R_hip_joint/H_Monster_Rig:R_knee_joint/H_Monster_Rig:R_ankle_joint/H_Monster_Rig:R_foot_shadow_joint
+    m_Weight: 0
+  - m_Path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_joint/H_Monster_Rig:R_hip_joint/H_Monster_Rig:R_knee_joint/H_Monster_Rig:R_ankle_joint/H_Monster_Rig:R_foot_shadow_joint/H_Monster_Rig:R_toe_shadow_joint
+    m_Weight: 0
+  - m_Path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_joint/H_Monster_Rig:tail_1_joint
+    m_Weight: 1
+  - m_Path: H_Monster_Rig:H_monster_joint_group/H_Monster_Rig:root_joint_group/H_Monster_Rig:ROOT/H_Monster_Rig:root_joint/H_Monster_Rig:waist_joint/H_Monster_Rig:tail_1_joint/H_Monster_Rig:tail_2_joint
+    m_Weight: 1

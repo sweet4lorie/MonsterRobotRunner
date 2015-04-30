@@ -9,7 +9,7 @@ public class characterSelectButtonHandler : MonoBehaviour {
 	private Light iconLight;
 
 	public string sceneChange;
-	private int characterSelected = -1;
+	private string characterSelected = "";
 	private float animationDuration = 1.05f;
 	private float addOnIntensity = 6.0f;
 	private float lightIncrement;
@@ -26,19 +26,17 @@ public class characterSelectButtonHandler : MonoBehaviour {
 	}
 	
 	// after Character is selected, initiate values for lights
-	public void characterButton (int character) {
+	public void characterButton (string character) {
 		characterSelected = character;
 
 		GameObject[] characterObjects;
-		characterObjects = GameObject.FindGameObjectsWithTag("SelectionChar" + character);
+		characterObjects = GameObject.FindGameObjectsWithTag("Selection_" + character);
 		foreach(GameObject obj in characterObjects) {
 			if (obj.transform.name == "Icon_Spotlight") {
-				Debug.Log ("Icon Spotlight");
 				iconLight = obj.GetComponent<Light>();
 				iconLightValue.Add ("intensity", iconLight.intensity);
 				iconLightValue.Add ("newIntensity", iconLight.intensity + addOnIntensity);
 			} else if (obj.transform.name == "Top_Spotlight") {
-				Debug.Log ("Top Spotlight");
 				topLight = obj.GetComponent<Light>();
 				topLightValue.Add ("intensity", topLight.intensity);
 				topLightValue.Add ("newIntensity", iconLight.intensity + addOnIntensity);
@@ -64,7 +62,7 @@ public class characterSelectButtonHandler : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (characterSelected != -1) {
+		if (characterSelected != "") {
 			StartCoroutine (animateChangeScene());
 			StartCoroutine (lightIncrease(iconLight, iconLightValue));
 			StartCoroutine (lightIncrease(topLight, topLightValue));

@@ -3,12 +3,17 @@ using System.Collections;
 
 public class PersistantGameManager : MonoBehaviour {
 	
-	//private string gameScene = "MonsterRobotRunner";
+	public string characterSelectedString;
 
 	// Use this for initialization
 	void Start () {
 	}
-	
+
+	public void characterButton (string character) {
+		Debug.Log (character);
+		characterSelectedString = character;
+	}
+
 	// Make this game object and all its transform children
 	// survive when loading a new scene.
 	void Awake() {
@@ -17,6 +22,5 @@ public class PersistantGameManager : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-	
 	}
 }

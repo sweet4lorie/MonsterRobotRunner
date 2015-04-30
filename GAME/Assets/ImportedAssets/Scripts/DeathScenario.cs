@@ -33,7 +33,6 @@ public class DeathScenario : MonoBehaviour {
 		//get both players death scripts
 		player1 = GameObject.Find (p1name);
 		p1death = player1.GetComponent<DeathScenario> ();
-
 	}
 
 

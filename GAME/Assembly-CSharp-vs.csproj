@@ -46,17 +46,18 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AddinScripts.cs" />
-     <Compile Include="Assets\CreateNewRoom.cs" />
+     <Compile Include="Assets\ImportedAssets\Scripts\AddinScripts.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\AlarmLightingEffect.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\BackgroundScroll.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\ImportedAssets\Scripts\CreateNewRoom.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\DeathScenario.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\DestroySet.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\GenerateLevelSets.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\IdleCheck.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\IncreaseSpotlight.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\MouseButton.cs" />
+     <Compile Include="Assets\ImportedAssets\Scripts\NetworkControl.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\PanelButtonHandler.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\PersistantGameManager.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\PlayerMove.cs" />
@@ -71,7 +72,6 @@
      <Compile Include="Assets\ImportedAssets\Scripts\SwitchScenes.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\TouchButtonLogic.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\characterSelectButtonHandler.cs" />
-     <Compile Include="Assets\NetworkControl.cs" />
      <Compile Include="Assets\Photon Unity Networking\Demos\Demo2DJumpAndRunWithPhysics\Scripts\Demo2DJumpAndRun.cs" />
      <Compile Include="Assets\Photon Unity Networking\Demos\Demo2DJumpAndRunWithPhysics\Scripts\JumpAndRunMovement.cs" />
      <Compile Include="Assets\Photon Unity Networking\Demos\DemoBoxes\DemoBoxesGui.cs" />

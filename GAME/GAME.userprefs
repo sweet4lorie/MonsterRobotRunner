@@ -1,17 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ImportedAssets/Scripts/DeathScenario.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/AddinScripts.cs">
     <Files>
-      <File FileName="Assets/ImportedAssets/Scripts/DeathScenario.cs" Line="33" Column="1" />
-      <File FileName="Assets/ImportedAssets/Scripts/PlayerMove.cs" Line="204" Column="1" />
-      <File FileName="Assets/ImportedAssets/Scripts/PlayerTether.cs" Line="217" Column="2" />
-      <File FileName="Assets/ImportedAssets/Scripts/PersistantGameManager.cs" Line="17" Column="2" />
-      <File FileName="Assets/ImportedAssets/Scripts/SwitchScenes.cs" Line="1" Column="1" />
-      <File FileName="Assets/ImportedAssets/Scripts/ScrollText.cs" Line="1" Column="1" />
-      <File FileName="Assets/ImportedAssets/Scripts/ScoreUpdater.cs" Line="30" Column="1" />
-      <File FileName="Assets/ImportedAssets/Scripts/StartNetwork.cs" Line="11" Column="25" />
-      <File FileName="Assets/ImportedAssets/Scripts/CameraFollow.cs" Line="40" Column="1" />
-      <File FileName="Assets/ImportedAssets/Scripts/BackgroundScroll.cs" Line="28" Column="1" />
+      <File FileName="Assets/NetworkControl.cs" Line="64" Column="83" />
+      <File FileName="Assets/AddinScripts.cs" Line="21" Column="21" />
+      <File FileName="Assets/CreateNewRoom.cs" Line="27" Column="48" />
+      <File FileName="Assets/ImportedAssets/Scripts/DeathScenario.cs" Line="51" Column="4" />
+      <File FileName="Assets/ImportedAssets/Scripts/StartingofNetwork.cs" Line="15" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

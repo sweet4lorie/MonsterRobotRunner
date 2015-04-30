@@ -5,7 +5,7 @@ public class StartNetwork : MonoBehaviour {
 	
 	private const string typename = "OhSnap!";
 	private const string gamename = "test";
-	private string p1name = "Player1(Clone)";
+	private string characterString;
 	private HostData[] hostlist;
 	public bool serverstart;
 	public bool serverjoin;
@@ -14,10 +14,12 @@ public class StartNetwork : MonoBehaviour {
 	private GameObject player1;
 	private PlayerTether tetherer;
 	private DeathScenario deathscene;
+	private PersistantGameManager gameManager;
 	
 	void Start() {
 		serverjoin = false;
 		serverstart = false;
+		gameManager.characterSelectedString = characterString;
 	}
 	// Use this for initialization
 	void StartServer() {
@@ -89,9 +91,8 @@ public class StartNetwork : MonoBehaviour {
 	}
 	
 	IEnumerator Timewaster() {
-		
 		yield return new WaitForSeconds (0.5f);
-		player1 = GameObject.Find (p1name);
+		player1 = GameObject.Find (characterString);
 		tetherer = player1.AddComponent<PlayerTether> ();
 	}
 	

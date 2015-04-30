@@ -6,8 +6,8 @@ TagManager:
   - Powerup
   - SelectionChar1
   - Floor
-  - SelectionChar2
-  - SelectionChar3
+  - Selection_H_Robot
+  - Selection_H_Monster
   - SelectionChar4
   - 
   Builtin Layer 0: Default

@@ -49,16 +49,18 @@ public class GenerateLevelSets : MonoBehaviour {
 		random = Random.Range (1, 4);
 	}
 
-	void OnSerializeNetworkView(BitStream stream, NetworkMessageInfo info) {
+	void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info) {
 		int temprandom = Random.Range (1,4);
-		if (player.networkView.isMine) {
-			stream.Serialize(ref random);
+		if (stream.isWriting) {
+			random = temprandom;
+			stream.SendNext(temprandom);
 		}
 		else {
-			stream.Serialize(ref temprandom);
+			temprandom = (int) stream.ReceiveNext();
 			random = temprandom;
 		}
 	}
+
 	//adds a floor tag to each generated building so player can jump on the set
 	IEnumerator addTag(Transform trans) {
 		trans.gameObject.tag = "Floor";

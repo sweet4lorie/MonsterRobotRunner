@@ -60,7 +60,7 @@ ModelImporter:
     7400000: idle
     9500000: //RootNode
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:
@@ -158,10 +158,10 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .00999999978
+    globalScale: .100000001
     meshCompression: 0
     addColliders: 0
-    importBlendShapes: 1
+    importBlendShapes: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -352,9 +352,9 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: J_Robot_Rig:body
-      position: {x: -6.27513027e-18, y: -2.98163414, z: -.0493169874}
-      rotation: {x: -6.12323426e-17, y: 1, z: 6.12323426e-17, w: -6.12323426e-17}
-      scale: {x: .0337751172, y: .0337751172, z: .0337751172}
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: J_Robot_Rig:bottom
       position: {x: -0, y: 0, z: 0}
@@ -407,127 +407,127 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: J_Robot_Rig:root_joint
-      position: {x: 3.25962901e-09, y: .0698314905, z: -.00437178323}
-      rotation: {x: 0, y: -1, z: 0, w: 8.42937027e-08}
+      position: {x: -6.93889349e-19, y: .698314905, z: 0}
+      rotation: {x: 0, y: -1, z: 0, w: 2.61505541e-17}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: J_Robot_Rig:chest_joint
-      position: {x: 5.551115e-19, y: .0041778977, z: -5.551115e-19}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: J_Robot_Rig:head_joint
-      position: {x: -0, y: .028915707, z: 0}
+      position: {x: 5.85482696e-33, y: .041778978, z: 8.49769401e-35}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: J_Robot_Rig:R_clavicle_joint
-      position: {x: -.0133155994, y: .0281366073, z: 4.9960034e-18}
+      position: {x: -.133156002, y: .28136608, z: 5.01971974e-17}
       rotation: {x: 1, y: -0, z: 0, w: -6.12323426e-17}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: J_Robot_Rig:R_shoulder_joint
-      position: {x: -.0178632997, y: -.000137999989, z: -1.44328988e-17}
+      position: {x: -.178633004, y: -.00137999991, z: -1.43784253e-16}
       rotation: {x: 1, y: 0, z: -0, w: 6.12323426e-17}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: J_Robot_Rig:R_elbow_joint
-      position: {x: -.033764299, y: 1.7763568e-17, z: 8.32667219e-18}
+      position: {x: -.337642998, y: 1.77635673e-16, z: 8.26986788e-17}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: J_Robot_Rig:R_hand_joint
-      position: {x: -.0373645164, y: 0, z: 8.881784e-18}
+      position: {x: -.373645157, y: 0, z: 9.19813459e-17}
       rotation: {x: 0, y: -.0196554065, z: -0, w: .999806821}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: J_Robot_Rig:R_middle_finger_joint
-      position: {x: -.0152602931, y: 2.13658745e-06, z: 1.27653516e-06}
-      rotation: {x: -.273147225, y: .640980244, z: .652219713, w: -.298570514}
+      position: {x: -.152593508, y: 1.77635673e-16, z: 1.23941018e-05}
+      rotation: {x: .0138984723, y: .706970215, z: .706970215, w: -.0138984723}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: J_Robot_Rig:R_pinky_finger_joint
-      position: {x: -.014997825, y: 2.13658745e-06, z: .0066741514}
-      rotation: {x: -.273147225, y: .640980244, z: .652219713, w: -.298570514}
+      position: {x: -.149968818, y: 1.77635673e-16, z: .0667411387}
+      rotation: {x: .0138984723, y: .706970215, z: .706970215, w: -.0138984723}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: J_Robot_Rig:R_thumb_finger_joint
-      position: {x: -.0116117653, y: 0, z: -.00985178631}
-      rotation: {x: -.478715867, y: .678160369, z: .551983535, w: -.079017885}
+      position: {x: -.116117656, y: 1.77635673e-16, z: -.0985178649}
+      rotation: {x: -.218508005, y: .672498524, z: .672498524, w: .218508005}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: J_Robot_Rig:L_clavicle_joint
-      position: {x: .0133155938, y: .0281366929, z: 5.55111479e-18}
+      position: {x: .133155942, y: .281366944, z: 5.01972106e-17}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: J_Robot_Rig:L_shoulder_joint
-      position: {x: .0178632569, y: .000137449199, z: 4.9960034e-18}
+      position: {x: .178632572, y: .00137449196, z: 5.644838e-17}
       rotation: {x: -4.32978063e-17, y: .707106829, z: -.707106829, w: 4.32978063e-17}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: J_Robot_Rig:L_elbow_joint
-      position: {x: -.0337643176, y: 8.881784e-18, z: 7.1054272e-17}
+      position: {x: -.337643176, y: 8.26987251e-17, z: 7.10542693e-16}
       rotation: {x: 7.3061933e-33, y: 2.83276934e-16, z: 6.12323426e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: J_Robot_Rig:L_hand_joint
-      position: {x: -.0370000005, y: -7.88860888e-33, z: 3.5527136e-17}
+      position: {x: -.370000005, y: -7.88860858e-32, z: 3.55271347e-16}
       rotation: {x: 0, y: 2.83276934e-16, z: 6.12323426e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
+    - name: J_Robot_Rig:head_joint
+      position: {x: -0, y: .289157063, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
     - name: J_Robot_Rig:waist_joint
-      position: {x: 5.551115e-19, y: -.00349125545, z: -5.551115e-19}
+      position: {x: 5.93186408e-33, y: -.0349125564, z: 8.49769401e-35}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: J_Robot_Rig:L_hip_joint
-      position: {x: .0107988054, y: -.00560515979, z: -2.40771535e-18}
+      position: {x: .107988052, y: -.056051597, z: -2.40771531e-17}
       rotation: {x: -.499154657, y: -.499136955, z: .500843883, w: .500861585}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: J_Robot_Rig:L_knee_joint
-      position: {x: -.0229675937, y: -5.91645666e-33, z: -6.661338e-18}
+      position: {x: -.229675934, y: -5.91645644e-32, z: -6.66133775e-17}
       rotation: {x: -4.30937405e-31, y: -3.27068194e-30, z: .00872653536, w: .999961913}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: J_Robot_Rig:L_ankle_shadow_joint
-      position: {x: -.0335235149, y: 1.38777875e-19, z: -1.11022296e-17}
+      position: {x: -.335235149, y: 1.3877787e-18, z: -1.11022296e-16}
       rotation: {x: 0, y: 0, z: -.00872653536, w: .999961913}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: J_Robot_Rig:L_foot_shadow_joint
-      position: {x: 7.77156121e-18, y: 3.330669e-18, z: -8.881784e-18}
+      position: {x: -0, y: 2.35922399e-17, z: -2.22044592e-17}
       rotation: {x: -8.32667268e-17, y: -5.55111512e-17, z: -1.66533454e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: J_Robot_Rig:L_toe_shadow_joint
-      position: {x: -.00338267698, y: .0138891833, z: -1.99840136e-17}
+      position: {x: -.0338267684, y: .138891831, z: -2.22044592e-16}
       rotation: {x: .5, y: -.5, z: -.5, w: .5}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: J_Robot_Rig:R_hip_joint
-      position: {x: -.0107987998, y: -.00560513791, z: -7.69760299e-18}
+      position: {x: -.107988, y: -.0560513809, z: -7.69760315e-17}
       rotation: {x: .500861526, y: -.500843883, z: -.499136984, w: .499154687}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: J_Robot_Rig:R_knee_joint
-      position: {x: .0229676012, y: -2.54991597e-18, z: 1.7763568e-17}
-      rotation: {x: -4.02379145e-31, y: -6.41656992e-31, z: 5.20260501e-16, w: 1}
+      position: {x: .229676008, y: -2.54991593e-17, z: 1.77635673e-16}
+      rotation: {x: 3.06703411e-29, y: 4.89313949e-29, z: -3.96560531e-14, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: J_Robot_Rig:R_ankle
-      position: {x: .0335184187, y: .00058506598, z: 2.6645352e-17}
+      position: {x: .335184187, y: .00585065968, z: 2.6645351e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: J_Robot_Rig:R_foot_shadow_joint
-      position: {x: -7.2164494e-18, y: -1.110223e-18, z: 6.661338e-18}
-      rotation: {x: -3.1918912e-14, y: -4.16333634e-16, z: 2.77555756e-17, w: 1}
+      position: {x: -3.88578052e-17, y: 2.91433531e-17, z: 1.11022296e-16}
+      rotation: {x: 3.60822483e-16, y: 2.77555756e-17, z: 1.62647673e-14, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: J_Robot_Rig:R_toe_shadow_joint
-      position: {x: .00338268094, y: -.0138891656, z: 9.08162362e-16}
+      position: {x: .0338268094, y: -.138891652, z: 2.22044592e-17}
       rotation: {x: .5, y: -.5, z: -.5, w: .5}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1

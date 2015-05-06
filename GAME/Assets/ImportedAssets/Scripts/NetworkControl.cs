@@ -20,19 +20,14 @@ public class NetworkControl : MonoBehaviour {
 	void Start () {
 		PhotonNetwork.ConnectUsingSettings ("0.10");
 		gameManager = GameObject.Find ("GameController").GetComponent<PersistantGameManager>();
-		characterString = gameManager.characterModelString;
+		characterString = gameManager.characterSelectedString;
 		playernum = 1;
-	}
-
-	void OnGUI()
-	{
-		GUILayout.Label(PhotonNetwork.connectionStateDetailed.ToString());
 	}
 
 	public void OnEnable() {
 		if(serverList == null)
 		{
-			panel = transform.FindChild("AreaPanel");
+			panel = this.transform;
 			scroll = transform.FindChild("Scrollbar").gameObject;
 			serverList = new List<GameObject>();
 			unselectedColor = new Color(80/255.0f, 250/255.0f, 100/255.0f, 1);
@@ -67,8 +62,10 @@ public class NetworkControl : MonoBehaviour {
 				GameObject text = (GameObject)Instantiate(Resources.Load("RoomButton"));
 				serverList.Add(text);
 				text.transform.SetParent(panel, false);
-				text.transform.FindChild("Text").GetComponent<Text>().text = hostData[i].name;
-				text.GetComponent<RectTransform>().anchoredPosition = new Vector3(0,230 + (i * -70), 0);
+				text.transform.FindChild("JoinButton").FindChild("Text").GetComponent<Text>().text = hostData[i].name;
+				text.transform.FindChild("JoinButton").FindChild("Text").GetComponent<Text>().enabled = false;
+				text.transform.FindChild("Text").GetComponent<Text>().text = hostData[i].name+" needs your help!";
+				text.GetComponent<RectTransform>().anchoredPosition = new Vector3(-150,-100 + (i * -70), 10);
 			}
 		}
 		if((i * -25) < -290)
@@ -78,7 +75,7 @@ public class NetworkControl : MonoBehaviour {
 		}
 		else
 		{
-			panel.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 0);
+			//panel.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 0);
 			scroll.SetActive(false);
 		}
 		if(selected >= 0 && selected < serverList.Count)
@@ -101,7 +98,9 @@ public class NetworkControl : MonoBehaviour {
 		netview = this.GetComponent<PhotonView>();
 		netview.RPC("playernumber",PhotonTargets.All,(PhotonNetwork.playerList.Length));
 		gameManager = GameObject.Find ("GameController").GetComponent<PersistantGameManager>();
-		characterString = gameManager.characterModelString;
+		characterString = gameManager.characterSelectedString;
+		gameManager.thisPlayerNum = playernum;
+		gameManager.setOtherPlayer ();
 		GameObject monster = PhotonNetwork.Instantiate(characterString + "_Prefab", new Vector3(-1f,0.5f,0), Quaternion.identity,0);
 		monster.name = "Player" + playernum + "(Clone)";
 	}
@@ -113,12 +112,14 @@ public class NetworkControl : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		GameObject connectiontext = GameObject.Find ("Canvas");
+		connectiontext.transform.FindChild ("ConnectionText").GetComponent<Text> ().text = PhotonNetwork.connectionStateDetailed.ToString ();
 		if(Input.GetKeyDown(KeyCode.Mouse0))
 		{
 			GameObject server = EventSystem.current.currentSelectedGameObject;
 			if(server != null)
 			{
-				if(server.name == "RoomButton(Clone)")
+				if(server.name == "JoinButton")
 				{
 					if(selectedObject != null)
 						selectedObject.transform.GetComponent<Image>().color = unselectedColor;

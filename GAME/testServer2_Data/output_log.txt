@@ -16,43 +16,41 @@ Platform assembly: C:\Users\Brian\Documents\GitHub\OhSnap\GAME\testServer2_Data\
 Loading C:\Users\Brian\Documents\GitHub\OhSnap\GAME\testServer2_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Brian\Documents\GitHub\OhSnap\GAME\testServer2_Data\Managed\Photon3Unity3D.dll (this message is harmless)
 Loading C:\Users\Brian\Documents\GitHub\OhSnap\GAME\testServer2_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
-- Completed reload, in  0.037 seconds
+- Completed reload, in  0.038 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 Platform assembly: C:\Users\Brian\Documents\GitHub\OhSnap\GAME\testServer2_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Brian\Documents\GitHub\OhSnap\GAME\testServer2_Data\Managed\System.dll (this message is harmless)
-UnloadTime: 2.300800 ms
+UnloadTime: 2.235018 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 734.
-Total: 0.594933 ms (FindLiveObjects: 0.020464 ms CreateObjectMapping: 0.007601 ms MarkObjects: 0.132142 ms  DeleteObjects: 0.059347 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 749.
+Total: 0.541432 ms (FindLiveObjects: 0.020172 ms CreateObjectMapping: 0.007308 ms MarkObjects: 0.123664 ms  DeleteObjects: 0.055254 ms)
 
-Icon Spotlight
+H_Monster
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Top Spotlight
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+UnloadTime: 0.567159 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-UnloadTime: 1.249215 ms
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 67 unused Assets to reduce memory usage. Loaded Objects now: 326.
-Total: 1.655290 ms (FindLiveObjects: 0.032743 ms CreateObjectMapping: 0.015786 ms MarkObjects: 0.225694 ms  DeleteObjects: 0.511613 ms)
+Unloading 70 unused Assets to reduce memory usage. Loaded Objects now: 350.
+Total: 0.741692 ms (FindLiveObjects: 0.013155 ms CreateObjectMapping: 0.007308 ms MarkObjects: 0.135650 ms  DeleteObjects: 0.240019 ms)
 
 Connect() can't be called if peer is not Disconnected. Not connecting. peerConnectionState: Connecting
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-WOOT!6af4b006-c998-4f57-82fc-0e38718be3c3
+Icon_H_Monster (UnityEngine.Sprite)
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-UnloadTime: 0.988438 ms
-Unloading 6 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+Icon_H_Monster
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2205.
-Total: 0.786716 ms (FindLiveObjects: 0.066071 ms CreateObjectMapping: 0.013155 ms MarkObjects: 0.301706 ms  DeleteObjects: 0.017541 ms)
+Created: 02f486b6-2e42-460f-a288-a657356a7ce8
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 

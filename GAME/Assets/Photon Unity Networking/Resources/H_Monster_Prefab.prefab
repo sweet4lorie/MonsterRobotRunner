@@ -226,8 +226,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 414814}
-  - 136: {fileID: 13671484}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: H_Monster_Rig:tongue_2_joint
   m_TagString: PullJoint
   m_Icon: {fileID: 0}
@@ -451,7 +450,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 114764}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.20167542, y: .729906201, z: 2.86999846}
+  m_LocalPosition: {x: 11.7289448, y: 136.773758, z: -27.2124634}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 414766}
@@ -964,19 +963,6 @@ CapsuleCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 114764}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: .5
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!136 &13671484
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 114794}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1

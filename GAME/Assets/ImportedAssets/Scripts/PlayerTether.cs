@@ -55,10 +55,10 @@ public class PlayerTether : MonoBehaviour {
 		Dictionary<string, KeyCode> player1 = new Dictionary<string, KeyCode>();
 		Dictionary<string, KeyCode> player2 = new Dictionary<string, KeyCode>();
 		
-		player1.Add ("tether", KeyCode.R);
+		player1.Add ("tether", KeyCode.RightShift);
 		keyControls.Add (player1Label, player1);
 		
-		player2.Add ("tether", KeyCode.E);
+		player2.Add ("tether", KeyCode.LeftShift);
 		keyControls.Add (player2Label, player2);
 		
 		// check which game object it is connnected to
@@ -177,8 +177,7 @@ public class PlayerTether : MonoBehaviour {
 
 		// find direction of characters
 
-		if (Input.GetKey (keyControls [currentPlayer] ["tether"])|| Input.GetKey (keyControls [otherPlayer] ["tether"])
-		    || buttonClicked == "Pull") {
+		if (Input.GetKey (keyControls [currentPlayer] ["tether"])|| buttonClicked == "Pull") {
 			//clean values
 			speed = 0;
 			speed2 = 0;
@@ -214,18 +213,18 @@ public class PlayerTether : MonoBehaviour {
 		animatorControlOtherPlayer.SetBool("IsFront", isFrontOtherPlayer);
 		
 		if (checkPulledCurrentPlayer == true) {
-			cloth.SetActive(true);
+			//cloth.SetActive(true);
 			if (currentPlayer == player1Label) {
 				StartCoroutine(normalYTether());
 				StartCoroutine(player1XTether());
-			} else {
+			} 
+			else {
+				StartCoroutine(normalYTether());
 				StartCoroutine(normalXTether());
 			}
-
 		}
 		else {
-			Debug.Log(cloth);
-			cloth.SetActive(false);
+			//cloth.SetActive(false);
 		}
 	}
 

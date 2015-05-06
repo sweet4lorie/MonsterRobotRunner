@@ -54,6 +54,7 @@
      <Compile Include="Assets\ImportedAssets\Scripts\DeathScenario.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\DestroySet.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\GenerateLevelSets.cs" />
+     <Compile Include="Assets\ImportedAssets\Scripts\IconManager.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\IdleCheck.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\IncreaseSpotlight.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\MouseButton.cs" />

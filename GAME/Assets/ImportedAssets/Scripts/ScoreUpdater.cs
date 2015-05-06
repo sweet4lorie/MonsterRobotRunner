@@ -14,14 +14,10 @@ public class ScoreUpdater : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		gameManager = GameObject.Find ("GameController").GetComponent<PersistantGameManager>();
-		characterString = gameManager.characterSelectedString;
+		characterString = gameManager.thisPlayer;
 		player = GameObject.Find (characterString);
-		if(PhotonView.Get(player).isMine) {
-			playername = characterString;
-		}
-		else {
-			playername = gameManager.allyCharacterString;
-		}
+		//if(PhotonView.Get(player).isMine) {
+			playername = gameManager.thisPlayer;
 		ScoreText = GetComponent<Text> ();
 		Highscore = PlayerPrefs.GetInt ("High Score");
 		score = 0;

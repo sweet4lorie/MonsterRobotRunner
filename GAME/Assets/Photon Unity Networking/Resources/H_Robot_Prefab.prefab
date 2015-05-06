@@ -8,11 +8,11 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 441484}
+  - 65: {fileID: 6567186}
   - 54: {fileID: 5441560}
-  - 136: {fileID: 13641560}
   - 114: {fileID: 11441554}
   - 114: {fileID: 11441556}
-  - 148: {fileID: 14841560}
+  - 82: {fileID: 8270976}
   - 114: {fileID: 11441560}
   m_Layer: 9
   m_Name: H_Robot_Prefab
@@ -109,8 +109,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 441498}
   - 137: {fileID: 13741556}
-  - 136: {fileID: 13670012}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: H_Robot_Rig:R_hand_geo
   m_TagString: PullJoint
   m_Icon: {fileID: 0}
@@ -606,7 +605,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 141484}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.07258368, y: 2.17140818, z: 2.86999869}
+  m_LocalPosition: {x: 9.79746819, y: 133.606445, z: -28.5057831}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 441486}
@@ -1120,6 +1119,76 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &6567186
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 141484}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!82 &8270976
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 141484}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 8593dbf11ba2941a5b3f387f85a18b14, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: .5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!95 &9541560
 Animator:
   serializedVersion: 3
@@ -1185,32 +1254,6 @@ MonoBehaviour:
   viewIdField: 0
   instantiationId: -1
   isRuntimeInstantiated: 0
---- !u!136 &13641560
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 141484}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: .5
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!136 &13670012
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 141496}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: .187110901
-  m_Height: .692998886
-  m_Direction: 1
-  m_Center: {x: -.035103038, y: .43156445, z: -.527909875}
 --- !u!137 &13741550
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -1553,18 +1596,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -.0361052155, y: .346976966, z: -.00471796095}
     m_Extent: {x: .342686564, y: .367337078, z: .493374765}
   m_DirtyAABB: 0
---- !u!148 &14841560
-NetworkView:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 141484}
-  m_Enabled: 1
-  m_StateSynchronization: 1
-  m_Observed: {fileID: 441484}
-  m_ViewID:
-    m_ID: 0
-    m_Type: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

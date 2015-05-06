@@ -3,7 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class PlayerMove : MonoBehaviour {
-	
+
+	// for photon lag
+	public Vector3 realPosition = Vector3.zero;
+	public Vector3 positionAtLastPacket = Vector3.zero;
+	public double currentTime = 0.0;
+	public double currentPacketTime = 0.0;
+	public double lastPacketTime = 0.0;
+	public double timeToReachGoal = 0.0;
+
 	// default labels
 	private string player1Label = "Player1(Clone)";
 	private string player2Label = "Player2(Clone)";
@@ -50,13 +58,11 @@ public class PlayerMove : MonoBehaviour {
 		player1.Add ("jump", KeyCode.Space);
 		player1.Add ("back", KeyCode.A);
 		player1.Add ("front", KeyCode.D);
-		player1.Add ("temp", KeyCode.T);
 		keyControls.Add (player1Label, player1);
 		
 		player2.Add ("jump", KeyCode.UpArrow);
 		player2.Add ("back", KeyCode.LeftArrow);
 		player2.Add ("front", KeyCode.RightArrow);
-		player2.Add ("temp", KeyCode.Y);
 		keyControls.Add (player2Label, player2);
 		
 		// check which game object it is connnected to
@@ -73,12 +79,17 @@ public class PlayerMove : MonoBehaviour {
 	void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info) {
 		syncposition = Vector3.zero;
 		if (stream.isWriting) {
-			syncposition = transform.position;
+			//syncposition = transform.position;
 			stream.SendNext(syncposition);
 		}
 		else {
-			syncposition = (Vector3) stream.ReceiveNext();
-			transform.position = syncposition;
+			//syncposition = (Vector3) stream.ReceiveNext();
+			//transform.position = syncposition;
+			currentTime = 0.0;
+			positionAtLastPacket = transform.position;
+			realPosition = (Vector3)stream.ReceiveNext();
+			lastPacketTime = currentPacketTime;
+			currentPacketTime = info.timestamp;
 		}
 	}
 	//Speed boost
@@ -176,17 +187,14 @@ public class PlayerMove : MonoBehaviour {
 		//if (networkView.isMine) {
 		Vector3 downray = transform.TransformDirection (Vector3.down);
 		//animatorControl.SetBool("Tether", false);
-
-		//temporary forward and backwards movement
-		if(PhotonView.Get (this).isMine) {
-			transform.position = Vector3.Lerp(transform.position,this.syncposition,Time.deltaTime * 5);
-			if (Input.GetKey (keyControls[currentPlayer]["back"])) {
-				rigidbody.MovePosition(rigidbody.position + (-side) * Time.deltaTime);
-			}
-			if (Input.GetKey (keyControls[currentPlayer]["front"])) {
-				rigidbody.MovePosition(rigidbody.position + side * Time.deltaTime);
-			}
+	
+		if (Input.GetKey (keyControls[currentPlayer]["back"])) {
+			rigidbody.MovePosition(rigidbody.position + (-side) * Time.deltaTime);
 		}
+		if (Input.GetKey (keyControls[currentPlayer]["front"])) {
+			rigidbody.MovePosition(rigidbody.position + side * Time.deltaTime);
+		}
+
 		//cast ray to check if REALLY grounded
 		if (Physics.Raycast(transform.position, downray, out hit, 1)) {
 			collide = hit.collider.gameObject.name;
@@ -200,13 +208,12 @@ public class PlayerMove : MonoBehaviour {
 		else { isgrounded = false;}
 		
 		// jump function
-		if(PhotonView.Get (this).isMine) {
-			if ((Input.GetKey (keyControls[currentPlayer]["jump"]))&&(isgrounded == true)) {
-				// START jump animation
-				animatorControl.SetBool("Jump", isgrounded);
-				StartCoroutine(Jump ());
-			}
+		if ((Input.GetKey (keyControls[currentPlayer]["jump"]))&&(isgrounded == true)) {
+			// START jump animation
+			animatorControl.SetBool("Jump", isgrounded);
+			StartCoroutine(Jump ());
 		}
+
 		if (isgrounded == false) {
 			rigidbody.AddForce(extragrav);
 		}

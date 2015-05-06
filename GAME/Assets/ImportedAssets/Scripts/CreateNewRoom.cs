@@ -7,8 +7,8 @@ public class CreateNewRoom : MonoBehaviour {
 	private Button createRoomButton;
 	private InputField inputTextRoomName;
 	private GameObject waitText;
-	public GameObject myplayer;
-	public GameObject otherplayer;
+	private GameObject myplayer;
+	private GameObject otherplayer;
 	// Use this for initialization
 	void Start () {
 		PhotonNetwork.ConnectUsingSettings ("0.10");
@@ -16,11 +16,6 @@ public class CreateNewRoom : MonoBehaviour {
 		inputTextRoomName = GameObject.Find ("Canvas").GetComponentInChildren<InputField> ();
 		waitText = GameObject.Find("Waitingtext");
 		waitText.SetActive(false);
-	}
-
-	void OnGUI()
-	{
-		GUILayout.Label(PhotonNetwork.connectionStateDetailed.ToString());
 	}
 
 	// called when button is pressed
@@ -35,6 +30,9 @@ public class CreateNewRoom : MonoBehaviour {
 		otherplayer = GameObject.Find ("H_Monster_Prefab(Clone)");
 		if (otherplayer == null) {
 			otherplayer = GameObject.Find ("H_Robot_Prefab(Clone)");
+			if (otherplayer == null) {
+				otherplayer = GameObject.Find ("J_Robot_Prefab(Clone)");
+			}
 		}
 		otherplayer.name = "Player2(Clone)";
 	}

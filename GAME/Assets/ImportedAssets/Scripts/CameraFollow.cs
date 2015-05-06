@@ -8,6 +8,7 @@ public class CameraFollow: MonoBehaviour {
 	private string characterString;
 	private GameObject player;
 	public float height;
+	private bool cameraFollow = true;
 
 	private float minHeight = -2.0f;
 	private float maxHeight = 80.0f;
@@ -18,26 +19,31 @@ public class CameraFollow: MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		gameManager = GameObject.Find ("GameController").GetComponent<PersistantGameManager>();
-		characterString = gameManager.characterSelectedString;
+		characterString = gameManager.thisPlayer;
 
 		defaultX = Camera.main.gameObject.transform.position.x;
 		defaultY = Camera.main.gameObject.transform.position.y;
 		defaultZ = Camera.main.gameObject.transform.position.z;
 	}
+
+	public void cameraFollowStop () {
+		cameraFollow = false;
+	}
 	
 	// Update is called once per frame
 	void Update () {
-		//find player1 and follow his height
-		player = GameObject.Find (characterString);
-		if (player.GetComponent<PhotonView>().isMine) {
-			height = (float)player.transform.position.y;
-		}
-		//if player drops and falls, reset camera to default
-		if ((height >= minHeight)&&(height <= maxHeight)) {
-			this.gameObject.transform.position = new Vector3(defaultX, height, defaultZ);
-		}
-		else {
-			this.gameObject.transform.position = new Vector3(defaultX, defaultY, defaultZ);
+		if (cameraFollow) {
+			//find player1 and follow his height
+			player = GameObject.Find (characterString);
+			//if (player.GetComponent<PhotonView> ().isMine) {
+				height = (float)player.transform.position.y;
+			//}
+			//if player drops and falls, reset camera to default
+			if ((height >= minHeight) && (height <= maxHeight)) {
+				this.gameObject.transform.position = new Vector3 (defaultX, height, defaultZ);
+			} else {
+				this.gameObject.transform.position = new Vector3 (defaultX, defaultY, defaultZ);
+			}
 		}
 	}
 }

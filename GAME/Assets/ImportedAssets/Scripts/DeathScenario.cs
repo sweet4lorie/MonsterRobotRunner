@@ -6,7 +6,7 @@ public class DeathScenario : MonoBehaviour {
 	
 	public bool dead = false;
 	private float deathCapX = -20.0f;
-	private float deathCapY = -6.0f;
+	private float deathCapY = -10.0f;
 
 	GameObject replayButton;
 	GameObject homeButton;
@@ -28,7 +28,7 @@ public class DeathScenario : MonoBehaviour {
 		if (homeButton != null) {
 			homeButton.SetActive(false);
 		}
-
+			
 		//get both players death scripts
 		//player1 = GameObject.Find (p1name);
 		//p1death = player1.GetComponent<DeathScenario> ();

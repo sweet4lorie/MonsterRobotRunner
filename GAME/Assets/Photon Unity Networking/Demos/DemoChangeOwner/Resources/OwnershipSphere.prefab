@@ -94,12 +94,13 @@ MonoBehaviour:
   ownerId: 0
   group: 0
   prefixBackup: -1
-  observed: {fileID: 400000}
+  observed: {fileID: 0}
   synchronization: 3
   onSerializeTransformOption: 0
   onSerializeRigidBodyOption: 2
   ownershipTransfer: 1
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 400000}
   ObservedComponentsFoldoutOpen: 1
   viewIdField: 0
   instantiationId: -1

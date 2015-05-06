@@ -8,7 +8,10 @@ TagManager:
   - Floor
   - Selection_H_Robot
   - Selection_H_Monster
-  - SelectionChar4
+  - Selection_J_Robot
+  - Pointer
+  - SelectionChar3
+  - PullJoint
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

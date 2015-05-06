@@ -3,13 +3,25 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class ScoreUpdater : MonoBehaviour {
-	
+
+	private PersistantGameManager gameManager;
+	private string characterString;
+	private GameObject player;
 	public string playername = "Player1(Clone)";
 	public int score;
 	private Text ScoreText;
 	public int Highscore;
 	// Use this for initialization
 	void Start () {
+		gameManager = GameObject.Find ("GameController").GetComponent<PersistantGameManager>();
+		characterString = gameManager.characterSelectedString;
+		player = GameObject.Find (characterString);
+		if(PhotonView.Get(player).isMine) {
+			playername = characterString;
+		}
+		else {
+			playername = gameManager.allyCharacterString;
+		}
 		ScoreText = GetComponent<Text> ();
 		Highscore = PlayerPrefs.GetInt ("High Score");
 		score = 0;

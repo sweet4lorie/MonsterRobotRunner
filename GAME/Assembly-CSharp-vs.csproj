@@ -64,14 +64,13 @@
      <Compile Include="Assets\ImportedAssets\Scripts\PlayerTether.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\ScoreUpdater.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\ScrollText.cs" />
-     <Compile Include="Assets\ImportedAssets\Scripts\SetMove.cs" />
+     <Compile Include="Assets\ImportedAssets\Scripts\SetupTetherCloth.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\Speedboost.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\StartMovie.cs" />
-     <Compile Include="Assets\ImportedAssets\Scripts\StartNetwork.cs" />
-     <Compile Include="Assets\ImportedAssets\Scripts\StartingofNetwork.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\SwitchScenes.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\TouchButtonLogic.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\characterSelectButtonHandler.cs" />
+     <Compile Include="Assets\ImportedAssets\Scripts\setMove.cs" />
      <Compile Include="Assets\Photon Unity Networking\Demos\Demo2DJumpAndRunWithPhysics\Scripts\Demo2DJumpAndRun.cs" />
      <Compile Include="Assets\Photon Unity Networking\Demos\Demo2DJumpAndRunWithPhysics\Scripts\JumpAndRunMovement.cs" />
      <Compile Include="Assets\Photon Unity Networking\Demos\DemoBoxes\DemoBoxesGui.cs" />

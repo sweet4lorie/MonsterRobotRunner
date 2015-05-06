@@ -30,7 +30,8 @@ public class PlayerMove : MonoBehaviour {
 	private float blockDuration = 4.0f;
 	private float jumpDelay = 0.1f;
 	//private Vector3 jumpForce = new Vector3(0, 100, 0);
-	
+	private Vector3 syncposition;
+
 	// for specific player
 	private Dictionary<string, Dictionary<string, KeyCode>> keyControls = new Dictionary<string, Dictionary<string, KeyCode>>();
 	private string currentPlayer;
@@ -69,14 +70,14 @@ public class PlayerMove : MonoBehaviour {
 	}
 	
 	//Synchronize random number generator throughout network
-	void OnSerializeNetworkView(BitStream stream, NetworkMessageInfo info) {
-		Vector3 syncposition = Vector3.zero;
+	void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info) {
+		syncposition = Vector3.zero;
 		if (stream.isWriting) {
 			syncposition = transform.position;
-			stream.Serialize(ref syncposition);
+			stream.SendNext(syncposition);
 		}
 		else {
-			stream.Serialize(ref syncposition);
+			syncposition = (Vector3) stream.ReceiveNext();
 			transform.position = syncposition;
 		}
 	}
@@ -169,15 +170,16 @@ public class PlayerMove : MonoBehaviour {
 		yield return new WaitForSeconds (jumpDelay);
 		rigidbody.velocity = up;
 	}
-	
+
 	// Update is called once per frame
 	void FixedUpdate () {
 		//if (networkView.isMine) {
 		Vector3 downray = transform.TransformDirection (Vector3.down);
 		//animatorControl.SetBool("Tether", false);
-		
+
 		//temporary forward and backwards movement
 		if(PhotonView.Get (this).isMine) {
+			transform.position = Vector3.Lerp(transform.position,this.syncposition,Time.deltaTime * 5);
 			if (Input.GetKey (keyControls[currentPlayer]["back"])) {
 				rigidbody.MovePosition(rigidbody.position + (-side) * Time.deltaTime);
 			}

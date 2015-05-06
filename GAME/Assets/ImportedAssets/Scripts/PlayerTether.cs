@@ -6,7 +6,7 @@ public class PlayerTether : MonoBehaviour {
 	
 	// default labels
 	private string player1Label = "Player1(Clone)";
-	private string player2Label = "Player1(Clone)";
+	private string player2Label = "Player2(Clone)";
 	private string backgroundLabel = "Background";
 	private string groundTag = "Floor";
 	//private string pullButtonLabel = "Pull Button";
@@ -28,6 +28,7 @@ public class PlayerTether : MonoBehaviour {
 	public bool isFrontCurrentPlayer;
 	public bool isFrontOtherPlayer;
 	private string buttonClicked = "";
+	private GameObject cloth;
 
 	// values
 	private float speedIncrease;
@@ -77,6 +78,14 @@ public class PlayerTether : MonoBehaviour {
 		otherPlayerGameObject = GameObject.Find (otherPlayer);
 		animatorControlOtherPlayer = otherPlayerGameObject.GetComponentInChildren<Animator> ();
 		animatorControlOtherPlayer.SetBool ("Tether", checkTetherOtherPlayer);
+
+		//set clothes to players
+		if (currentPlayer == player1Label) {
+			cloth = GameObject.Find ("Player1_Cloth");
+		}
+		else {
+			cloth = GameObject.Find ("Player2_Cloth");
+		}
 	}
 
 	public void clickButton (string button)
@@ -167,7 +176,8 @@ public class PlayerTether : MonoBehaviour {
 	void FixedUpdate () {
 
 		// find direction of characters
-		if (Input.GetKey (keyControls [currentPlayer] ["tether"]) || Input.GetKey (keyControls [otherPlayer] ["tether"])
+
+		if (Input.GetKey (keyControls [currentPlayer] ["tether"])|| Input.GetKey (keyControls [otherPlayer] ["tether"])
 		    || buttonClicked == "Pull") {
 			//clean values
 			speed = 0;
@@ -204,13 +214,18 @@ public class PlayerTether : MonoBehaviour {
 		animatorControlOtherPlayer.SetBool("IsFront", isFrontOtherPlayer);
 		
 		if (checkPulledCurrentPlayer == true) {
-			StartCoroutine(normalYTether());
+			cloth.SetActive(true);
 			if (currentPlayer == player1Label) {
+				StartCoroutine(normalYTether());
 				StartCoroutine(player1XTether());
 			} else {
 				StartCoroutine(normalXTether());
 			}
 
+		}
+		else {
+			Debug.Log(cloth);
+			cloth.SetActive(false);
 		}
 	}
 

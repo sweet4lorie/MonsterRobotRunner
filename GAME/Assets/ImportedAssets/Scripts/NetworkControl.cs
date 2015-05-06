@@ -14,12 +14,14 @@ public class NetworkControl : MonoBehaviour {
 	private Transform panel;
 	private string characterString;
 	private PersistantGameManager gameManager;
-
+	public int playernum;
+	public PhotonView netview;
 	// Use this for initialization
 	void Start () {
 		PhotonNetwork.ConnectUsingSettings ("0.10");
 		gameManager = GameObject.Find ("GameController").GetComponent<PersistantGameManager>();
-		characterString = gameManager.characterSelectedString;
+		characterString = gameManager.characterModelString;
+		playernum = 1;
 	}
 
 	void OnGUI()
@@ -87,7 +89,7 @@ public class NetworkControl : MonoBehaviour {
 	}
 
 	void OnCreatedRoom() {
-		Debug.Log ("WOOT!"+PhotonNetwork.room.name);
+		Debug.Log ("Created: "+PhotonNetwork.room.name);
 	}
 
 	void OnPhotonRandomJoinFailed()
@@ -96,7 +98,17 @@ public class NetworkControl : MonoBehaviour {
 	}
 
 	void OnJoinedRoom() {
+		netview = this.GetComponent<PhotonView>();
+		netview.RPC("playernumber",PhotonTargets.All,(PhotonNetwork.playerList.Length));
+		gameManager = GameObject.Find ("GameController").GetComponent<PersistantGameManager>();
+		characterString = gameManager.characterModelString;
 		GameObject monster = PhotonNetwork.Instantiate(characterString + "_Prefab", new Vector3(-1f,0.5f,0), Quaternion.identity,0);
+		monster.name = "Player" + playernum + "(Clone)";
+	}
+
+	[RPC]
+	public void playernumber(int totalcount) {
+		playernum = totalcount;
 	}
 
 	// Update is called once per frame

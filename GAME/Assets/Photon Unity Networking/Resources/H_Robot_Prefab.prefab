@@ -12,9 +12,8 @@ GameObject:
   - 136: {fileID: 13641560}
   - 114: {fileID: 11441554}
   - 114: {fileID: 11441556}
-  - 114: {fileID: 11441558}
-  - 114: {fileID: 11441560}
   - 148: {fileID: 14841560}
+  - 114: {fileID: 11441560}
   m_Layer: 9
   m_Name: H_Robot_Prefab
   m_TagString: Player
@@ -110,9 +109,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 441498}
   - 137: {fileID: 13741556}
+  - 136: {fileID: 13670012}
   m_Layer: 0
   m_Name: H_Robot_Rig:R_hand_geo
-  m_TagString: Untagged
+  m_TagString: PullJoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -606,7 +606,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 141484}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.23568988, y: 2.60472822, z: -26.4755268}
+  m_LocalPosition: {x: -6.07258368, y: 2.17140818, z: 2.86999869}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 441486}
@@ -1160,25 +1160,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isgrounded: 0
   collide: 
---- !u!114 &11441558
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 141484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a3cf936c0185480d85501c8054436b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  endDistanceX: 0
-  endDistanceY: 0
-  speed: 0
-  speed2: 0
-  checkPulledCurrentPlayer: 0
-  checkTetherOtherPlayer: 0
-  isFrontCurrentPlayer: 0
-  isFrontOtherPlayer: 0
 --- !u!114 &11441560
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1217,6 +1198,19 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!136 &13670012
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 141496}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: .187110901
+  m_Height: .692998886
+  m_Direction: 1
+  m_Center: {x: -.035103038, y: .43156445, z: -.527909875}
 --- !u!137 &13741550
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -1561,7 +1555,7 @@ SkinnedMeshRenderer:
   m_DirtyAABB: 0
 --- !u!148 &14841560
 NetworkView:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 141484}

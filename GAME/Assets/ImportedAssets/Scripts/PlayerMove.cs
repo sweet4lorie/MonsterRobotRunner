@@ -222,6 +222,7 @@ public class PlayerMove : MonoBehaviour {
 		rigidbody.transform.rotation = Quaternion.identity;
 		rigidbody.transform.Rotate (0, 0, 0);
 		this.transform.GetChild(0).GetComponent<Transform>().localPosition = new Vector3(0,0,0);
+		this.transform.position = new Vector3 (this.transform.position.x, this.transform.position.y, 0);
 	}
 	//}
 }

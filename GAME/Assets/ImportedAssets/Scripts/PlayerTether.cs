@@ -213,7 +213,7 @@ public class PlayerTether : MonoBehaviour {
 		animatorControlOtherPlayer.SetBool("IsFront", isFrontOtherPlayer);
 		
 		if (checkPulledCurrentPlayer == true) {
-			//cloth.SetActive(true);
+			cloth.GetComponent<ClothRenderer>().enabled = true;
 			if (currentPlayer == player1Label) {
 				StartCoroutine(normalYTether());
 				StartCoroutine(player1XTether());
@@ -224,7 +224,7 @@ public class PlayerTether : MonoBehaviour {
 			}
 		}
 		else {
-			//cloth.SetActive(false);
+			cloth.GetComponent<ClothRenderer>().enabled = false;
 		}
 	}
 

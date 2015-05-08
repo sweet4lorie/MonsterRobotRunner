@@ -14,6 +14,8 @@ public class PersistantGameManager : MonoBehaviour {
 	void Start () {
 		player [1] = "Player1(Clone)";
 		player [2] = "Player2(Clone)";
+		thisPlayer = player [1];
+		otherPlayer = player [2];
 	}
 	
 	public void characterButton (string character) {

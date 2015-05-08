@@ -5,13 +5,15 @@ using UnityEngine.UI;
 public class DeathScenario : MonoBehaviour {
 	
 	public bool dead = false;
-	private float deathCapX = -20.0f;
+	private float deathCapX = -15.0f;
 	private float deathCapY = -10.0f;
 
 	GameObject replayButton;
 	GameObject homeButton;
 	GameObject jumpButton;
 	GameObject pullButton;
+	GameObject camera;
+	GameObject background;
 
 	// Use this for initialization
 	void Start () {
@@ -22,6 +24,9 @@ public class DeathScenario : MonoBehaviour {
 		homeButton = GameObject.Find ("HomeButton");
 		jumpButton = GameObject.Find ("Jump Button");
 		pullButton = GameObject.Find ("Pull Button");
+		camera = GameObject.Find ("Main Camera");
+		background = GameObject.Find ("Background");
+
 		if (replayButton != null) {
 			replayButton.SetActive(false);
 		}
@@ -47,6 +52,8 @@ public class DeathScenario : MonoBehaviour {
 			jumpButton.GetComponent<Button> ().interactable = false;
 			replayButton.SetActive (true);
 			homeButton.SetActive (true);
+			camera.GetComponent<CameraFollow>().cameraFollowStop();
+			background.GetComponent<BackgroundScroll>().backgroundFollowStop();
 		}
 	}
 }

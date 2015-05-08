@@ -47,13 +47,14 @@ public class SetupTetherCloth : MonoBehaviour {
 		float scalex = distance / 9;
 		float roty = Mathf.Atan ((pt1.z - pt2.z)/(pt1.x - pt2.x)) * convertValue * m1;
 		float rotz = Mathf.Asin ((pt1.y - pt2.y)/distance) * convertValue * m2;
-		Debug.Log (roty);
+		Debug.Log (distance);
+		Debug.Log ((pt1.y - pt2.y)/distance);
 		Debug.Log (rotz);
 		
 		gameObject.transform.eulerAngles = new Vector3(0F, 0F, rotz);
 		gameObject.transform.eulerAngles = new Vector3(0F, roty, rotz);
 		
-		gameObject.transform.localScale = new Vector3(scalex, 1F, 0.02F);
+		gameObject.transform.localScale = new Vector3(scalex, 1F, 0.03F);
 		
 		// can only add collider when turned on
 		gameObject.SetActive (true);

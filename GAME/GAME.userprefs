@@ -1,18 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ImportedAssets/Scripts/SwitchScenes.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ImportedAssets/Scripts/PlayerTether.cs">
     <Files>
-      <File FileName="Assets/ImportedAssets/Scripts/characterSelectButtonHandler.cs" Line="21" Column="31" />
-      <File FileName="Assets/ImportedAssets/Scripts/NetworkControl.cs" Line="104" Column="79" />
-      <File FileName="Assets/ImportedAssets/Scripts/SwitchScenes.cs" Line="45" Column="13" />
-      <File FileName="Assets/ImportedAssets/Scripts/CameraFollow.cs" Line="20" Column="17" />
-      <File FileName="Assets/ImportedAssets/Scripts/AddinScripts.cs" Line="19" Column="42" />
-      <File FileName="Assets/ImportedAssets/Scripts/CreateNewRoom.cs" Line="25" Column="1" />
-      <File FileName="Assets/Photon Unity Networking/Plugins/PhotonNetwork/PhotonNetwork.cs" Line="1577" Column="10" />
-      <File FileName="Assets/ImportedAssets/Scripts/BackgroundScroll.cs" Line="22" Column="1" />
-      <File FileName="Assets/ImportedAssets/Scripts/DeathScenario.cs" Line="34" Column="63" />
-      <File FileName="Assets/ImportedAssets/Scripts/IconManager.cs" Line="24" Column="4" />
-      <File FileName="Assets/ImportedAssets/Scripts/PersistantGameManager.cs" Line="19" Column="50" />
+      <File FileName="Assets/ImportedAssets/Scripts/PersistantGameManager.cs" Line="4" Column="1" />
+      <File FileName="Assets/ImportedAssets/Scripts/BackgroundScroll.cs" Line="31" Column="12" />
+      <File FileName="Assets/ImportedAssets/Scripts/SetupTetherCloth.cs" Line="52" Column="20" />
+      <File FileName="Assets/ImportedAssets/Scripts/DeathScenario.cs" Line="51" Column="15" />
+      <File FileName="Assets/ImportedAssets/Scripts/CameraFollow.cs" Line="29" Column="1" />
+      <File FileName="Assets/ImportedAssets/Scripts/PlayerTether.cs" Line="195" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

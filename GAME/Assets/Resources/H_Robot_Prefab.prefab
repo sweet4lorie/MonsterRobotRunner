@@ -203,9 +203,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 404276}
+  - 135: {fileID: 13534648}
   m_Layer: 0
   m_Name: H_Robot_Rig:R_hand_joint
-  m_TagString: Untagged
+  m_TagString: PullJoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -478,7 +479,7 @@ GameObject:
   - 137: {fileID: 13704270}
   m_Layer: 9
   m_Name: H_Robot_Rig:R_hand_geo
-  m_TagString: PullJoint
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1234,6 +1235,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collide: 
+--- !u!135 &13534648
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 104292}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: .5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!137 &13704266
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

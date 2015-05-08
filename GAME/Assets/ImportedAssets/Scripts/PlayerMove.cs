@@ -165,9 +165,10 @@ public class PlayerMove : MonoBehaviour {
 		}
 	}
 	
-	void OnTriggerEnter() {
+	void OnTriggerEnter(Collider other) {
 		//If player collides with powerup
 		StartCoroutine(Speedbump());
+		Destroy (other.gameObject);
 	}
 	
 	void OnCollisionExit (Collision collision) {

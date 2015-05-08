@@ -10450,7 +10450,7 @@ Transform:
   m_PrefabParentObject: {fileID: 433714, guid: 5f7c51c760c0c3447b822595ef2136cb, type: 2}
   m_PrefabInternal: {fileID: 1389844254}
   m_GameObject: {fileID: 580383112}
-  m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106709}
+  m_LocalRotation: {x: -.707106888, y: 0, z: 0, w: .707106769}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -10466,6 +10466,7 @@ GameObject:
   - 4: {fileID: 581600414}
   - 33: {fileID: 581600416}
   - 23: {fileID: 581600415}
+  - 65: {fileID: 581600417}
   m_Layer: 0
   m_Name: Energy Powerup
   m_TagString: Powerup
@@ -10514,6 +10515,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 368012090}
   m_GameObject: {fileID: 581600413}
   m_Mesh: {fileID: 4300000, guid: dbdd8972278154a31b4e128bf7ecb078, type: 3}
+--- !u!65 &581600417
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 581600413}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.19063962, y: .926918924, z: 1.19063973}
+  m_Center: {x: -.00112265337, y: .464406341, z: 0}
 --- !u!1 &584678908
 GameObject:
   m_ObjectHideFlags: 0
@@ -20577,7 +20590,7 @@ Transform:
   m_PrefabParentObject: {fileID: 433714, guid: 5f7c51c760c0c3447b822595ef2136cb, type: 2}
   m_PrefabInternal: {fileID: 918325989}
   m_GameObject: {fileID: 1103311439}
-  m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106709}
+  m_LocalRotation: {x: -.707106888, y: 0, z: 0, w: .707106769}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -27629,6 +27642,7 @@ GameObject:
   - 4: {fileID: 1498379354}
   - 33: {fileID: 1498379356}
   - 23: {fileID: 1498379355}
+  - 65: {fileID: 1498379357}
   m_Layer: 0
   m_Name: Energy Powerup
   m_TagString: Powerup
@@ -27677,6 +27691,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 368012090}
   m_GameObject: {fileID: 1498379353}
   m_Mesh: {fileID: 4300000, guid: dbdd8972278154a31b4e128bf7ecb078, type: 3}
+--- !u!65 &1498379357
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1498379353}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.19063973, y: .926918983, z: 1.19063973}
+  m_Center: {x: -.0011073947, y: .464406371, z: 0}
 --- !u!1 &1501974478
 GameObject:
   m_ObjectHideFlags: 0
@@ -36450,7 +36476,7 @@ Transform:
   m_PrefabParentObject: {fileID: 438082, guid: 3b79c312d4338427c8b8edc65a5de967, type: 2}
   m_PrefabInternal: {fileID: 421699217}
   m_GameObject: {fileID: 1937901813}
-  m_LocalRotation: {x: 0, y: -.228244931, z: 0, w: .973603725}
+  m_LocalRotation: {x: 0, y: -.228244945, z: 0, w: .973603785}
   m_LocalPosition: {x: 8.8200016, y: -1.37, z: 1.35000002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []

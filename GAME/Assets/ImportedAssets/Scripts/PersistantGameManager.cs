@@ -9,6 +9,7 @@ public class PersistantGameManager : MonoBehaviour {
 	public int thisPlayerNum;
 	public string thisPlayer;
 	public string otherPlayer;
+	public string characterType;
 	
 	// Use this for initialization
 	void Start () {
@@ -16,11 +17,12 @@ public class PersistantGameManager : MonoBehaviour {
 		player [2] = "Player2(Clone)";
 		thisPlayer = player [1];
 		otherPlayer = player [2];
+		characterType = "";
 	}
 	
 	public void characterButton (string character) {
 		characterSelectedString = character;
-		Debug.Log (characterSelectedString);
+		characterType = characterSelectedString.Substring(2);
 	}
 	
 	public void setOtherPlayer()

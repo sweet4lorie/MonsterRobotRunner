@@ -9,21 +9,26 @@ public class ScoreUpdater : MonoBehaviour {
 	public string playername = "Player1(Clone)";
 	public int score;
 	private Text ScoreText;
+	private Text highScoreText;
 	public int Highscore;
+
 	// Use this for initialization
 	void Start () {
 		gameManager = GameObject.Find ("GameController").GetComponent<PersistantGameManager>();
+		highScoreText = GameObject.Find ("HighScoreText").GetComponent<Text> ();
 		//if(PhotonView.Get(player).isMine) {
 			playername = gameManager.thisPlayer;
 		ScoreText = GetComponent<Text> ();
 		Highscore = PlayerPrefs.GetInt ("High Score");
+		highScoreText.text = "HighScore:\n" + Highscore.ToString();
 		score = 0;
-	}
-	
-	void OnGUI()
-	{
-		//show score
-		GUI.Button (new Rect (10, 10, 110, 80), "High Score: " + Highscore + "\n" + "Score: " + score);
+		
+		Sprite newSprite = Resources.Load <Sprite>("UIDisplay_HighScore_" + gameManager.characterType);
+		if (newSprite){
+			GameObject.Find ("HighScore").GetComponent<Image> ().sprite = newSprite;
+		} else {
+			Debug.LogError("Sprite not found", this);
+		}
 	}
 	
 	// Update is called once per frame
@@ -32,12 +37,14 @@ public class ScoreUpdater : MonoBehaviour {
 		DeathScenario death = playerdead.GetComponent<DeathScenario> ();
 		//if player is alive
 		if (death.dead == false) {
+			//updating score
+			score += 1;
+
 			//update highscore if score is higher
 			if (score > Highscore) {
 				Highscore = score;
+				highScoreText.text = "HighScore:\n" + Highscore.ToString();
 			}
-			//updating score
-			score += 1;
 		}
 		else {
 			//update leaderboard

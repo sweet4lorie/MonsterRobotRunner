@@ -16,10 +16,8 @@ public class SetupTetherCloth : MonoBehaviour {
 		{
 			if (child.transform.root.name == "Player"+playerNum+"(Clone)"){
 				pullChildJoint = child.gameObject.transform;
-				Debug.Log (pullChildJoint);
 			} else {
 				otherCollider = child.transform.root;
-				Debug.Log (otherCollider);
 			}
 		}
 		setupCloth ();
@@ -47,9 +45,6 @@ public class SetupTetherCloth : MonoBehaviour {
 		float scalex = distance / 9;
 		float roty = Mathf.Atan ((pt1.z - pt2.z)/(pt1.x - pt2.x)) * convertValue * m1;
 		float rotz = Mathf.Asin ((pt1.y - pt2.y)/distance) * convertValue * m2;
-		Debug.Log (distance);
-		Debug.Log ((pt1.y - pt2.y)/distance);
-		Debug.Log (rotz);
 		
 		gameObject.transform.eulerAngles = new Vector3(0F, 0F, rotz);
 		gameObject.transform.eulerAngles = new Vector3(0F, roty, rotz);

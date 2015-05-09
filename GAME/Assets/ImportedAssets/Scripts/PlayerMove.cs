@@ -74,24 +74,6 @@ public class PlayerMove : MonoBehaviour {
 			otherPlayer = player1Label;
 		}
 	}
-	
-	//Synchronize random number generator throughout network
-	void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info) {
-		syncposition = Vector3.zero;
-		if (stream.isWriting) {
-			//syncposition = transform.position;
-			stream.SendNext(syncposition);
-		}
-		else {
-			//syncposition = (Vector3) stream.ReceiveNext();
-			//transform.position = syncposition;
-			currentTime = 0.0;
-			positionAtLastPacket = transform.position;
-			realPosition = (Vector3)stream.ReceiveNext();
-			lastPacketTime = currentPacketTime;
-			currentPacketTime = info.timestamp;
-		}
-	}
 	//Speed boost
 	IEnumerator Speedbump() {
 		

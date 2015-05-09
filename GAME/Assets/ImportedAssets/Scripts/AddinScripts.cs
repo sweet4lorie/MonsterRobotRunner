@@ -4,13 +4,11 @@ using System.Collections;
 public class AddinScripts : MonoBehaviour {
 
 	private GameObject[] players;
-	private GameObject scoreText;
 	private bool starting;
 
 	// Use this for initialization
 	void Start () {
 		players = GameObject.FindGameObjectsWithTag ("Player");
-		scoreText = GameObject.Find ("ScoreText");
 		starting = false;
 	}
 
@@ -21,7 +19,6 @@ public class AddinScripts : MonoBehaviour {
 			player.AddComponent<PlayerTether> ();
 		}
 		this.gameObject.AddComponent<CameraFollow> ();
-		scoreText.AddComponent<ScoreUpdater> ();
 		yield return new WaitForSeconds (1.0f);
 	}
 

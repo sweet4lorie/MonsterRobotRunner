@@ -42,24 +42,7 @@ public class GenerateLevelSets : MonoBehaviour {
 		//nView = GetComponent<NetworkView> ();
 		//player = GameObject.Find ("Player1(Clone)");
 	}
-
-	//Synchronize random number generator throughout network
-	[RPC]
-	void SyncRandomVariable() {
-		random = Random.Range (1, 4);
-	}
-
-	void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info) {
-		int temprandom = Random.Range (1,4);
-		if (stream.isWriting) {
-			random = temprandom;
-			stream.SendNext(temprandom);
-		}
-		else {
-			temprandom = (int) stream.ReceiveNext();
-			random = temprandom;
-		}
-	}
+	
 
 	//adds a floor tag to each generated building so player can jump on the set
 	IEnumerator addTag(Transform trans) {

@@ -28,6 +28,11 @@ public class SwitchScenes : MonoBehaviour {
 		Application.LoadLevel (nextScene);
 	}
 
+	IEnumerator load(string next) {
+		yield return new WaitForSeconds (0.7f);
+		Application.LoadLevel (next);
+	}
+
 	public void noNetworkSwitch (string nextScene){
 		gameManager = controller.GetComponent<PersistantGameManager>();
 		gameManager.otherPlayer = "Player2(Clone)";
@@ -43,7 +48,7 @@ public class SwitchScenes : MonoBehaviour {
 		//point.transform.position = new Vector3(monster.transform.position.x, monster.transform.position.y + 1.5f,monster.transform.position.z);
 		point.transform.parent = monster.transform;
 
-		Application.LoadLevel (nextScene);
+		StartCoroutine (load (nextScene));
 	}
 
 	// Update is called once per frame

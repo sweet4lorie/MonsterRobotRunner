@@ -1101,7 +1101,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 199040}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.94099998, y: 2.59500003, z: 2.11400008}
+  m_LocalPosition: {x: -7.04400015, y: 2.59500003, z: 2.11400008}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 485790}
@@ -1263,7 +1263,7 @@ SkinnedMeshRenderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: ab2a94c72edf14cfc87890dcc3f43f55, type: 2}
+  - {fileID: 2100000, guid: 89bf354f8667246aabde0dbd90637f83, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1375,7 +1375,7 @@ SkinnedMeshRenderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: ab2a94c72edf14cfc87890dcc3f43f55, type: 2}
+  - {fileID: 2100000, guid: 89bf354f8667246aabde0dbd90637f83, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1431,7 +1431,7 @@ SkinnedMeshRenderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: ab2a94c72edf14cfc87890dcc3f43f55, type: 2}
+  - {fileID: 2100000, guid: 89bf354f8667246aabde0dbd90637f83, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1543,7 +1543,7 @@ SkinnedMeshRenderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: ab2a94c72edf14cfc87890dcc3f43f55, type: 2}
+  - {fileID: 2100000, guid: 89bf354f8667246aabde0dbd90637f83, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1711,7 +1711,7 @@ SkinnedMeshRenderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: ab2a94c72edf14cfc87890dcc3f43f55, type: 2}
+  - {fileID: 2100000, guid: 89bf354f8667246aabde0dbd90637f83, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0

@@ -51,6 +51,7 @@
      <Compile Include="Assets\ImportedAssets\Scripts\BackgroundScroll.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\CreateNewRoom.cs" />
+     <Compile Include="Assets\ImportedAssets\Scripts\DataSceneSingleViewManager.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\DeathScenario.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\DestroySet.cs" />
      <Compile Include="Assets\ImportedAssets\Scripts\GenerateLevelSets.cs" />

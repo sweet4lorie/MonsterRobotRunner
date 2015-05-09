@@ -1,13 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ImportedAssets/Scripts/PlayerTether.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ImportedAssets/Scripts/DataSceneSingleViewManager.cs">
     <Files>
-      <File FileName="Assets/ImportedAssets/Scripts/PersistantGameManager.cs" Line="4" Column="1" />
-      <File FileName="Assets/ImportedAssets/Scripts/BackgroundScroll.cs" Line="31" Column="12" />
-      <File FileName="Assets/ImportedAssets/Scripts/SetupTetherCloth.cs" Line="52" Column="20" />
-      <File FileName="Assets/ImportedAssets/Scripts/DeathScenario.cs" Line="51" Column="15" />
-      <File FileName="Assets/ImportedAssets/Scripts/CameraFollow.cs" Line="29" Column="1" />
-      <File FileName="Assets/ImportedAssets/Scripts/PlayerTether.cs" Line="195" Column="4" />
+      <File FileName="Assets/ImportedAssets/Scripts/DataSceneSingleViewManager.cs" Line="101" Column="30" />
+      <File FileName="Assets/ImportedAssets/Scripts/SetupTetherCloth.cs" Line="54" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

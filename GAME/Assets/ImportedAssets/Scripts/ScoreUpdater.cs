@@ -6,7 +6,6 @@ public class ScoreUpdater : MonoBehaviour {
 
 	private PersistantGameManager gameManager;
 	private string characterString;
-	private GameObject player;
 	public string playername = "Player1(Clone)";
 	public int score;
 	private Text ScoreText;
@@ -14,8 +13,6 @@ public class ScoreUpdater : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		gameManager = GameObject.Find ("GameController").GetComponent<PersistantGameManager>();
-		characterString = gameManager.thisPlayer;
-		player = GameObject.Find (characterString);
 		//if(PhotonView.Get(player).isMine) {
 			playername = gameManager.thisPlayer;
 		ScoreText = GetComponent<Text> ();

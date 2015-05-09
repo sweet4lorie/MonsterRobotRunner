@@ -8,12 +8,13 @@ public class DeathScenario : MonoBehaviour {
 	private float deathCapX = -15.0f;
 	private float deathCapY = -10.0f;
 
-	GameObject replayButton;
-	GameObject homeButton;
-	GameObject jumpButton;
-	GameObject pullButton;
-	GameObject camera;
-	GameObject background;
+	private GameObject replayButton;
+	private GameObject homeButton;
+	private GameObject jumpButton;
+	private GameObject pullButton;
+	private GameObject camera;
+	private GameObject background;
+	private GameObject player2;
 
 	// Use this for initialization
 	void Start () {
@@ -35,14 +36,14 @@ public class DeathScenario : MonoBehaviour {
 		}
 			
 		//get both players death scripts
-		//player1 = GameObject.Find (p1name);
-		//p1death = player1.GetComponent<DeathScenario> ();
+		player2 = GameObject.Find ("Player2(Clone)");
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		//Move player offscreen
-		if ((transform.position.x < deathCapX)||(transform.position.y < deathCapY)) {
+		if ((transform.position.x < deathCapX)||(transform.position.y < deathCapY) 
+		    || (player2.transform.position.x < deathCapX) ||(player2.transform.position.y < deathCapY)) {
 			transform.position = new Vector3(0,100.0f,0);
 			dead = true;
 		}
@@ -54,6 +55,9 @@ public class DeathScenario : MonoBehaviour {
 			homeButton.SetActive (true);
 			camera.GetComponent<CameraFollow>().cameraFollowStop();
 			background.GetComponent<BackgroundScroll>().backgroundFollowStop();
+			// tether remove
+			GameObject.Find ("Player1_Cloth").GetComponent<ClothRenderer>().enabled = false;
+			GameObject.Find ("Player2_Cloth").GetComponent<ClothRenderer>().enabled = false;
 		}
 	}
 }

@@ -258,7 +258,7 @@ State:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: idle
-  m_Speed: 1
+  m_Speed: .400000006
   m_CycleOffset: 0
   m_Motions:
   - {fileID: 7400000, guid: 4a60729e7e0254054989c39fd2a39629, type: 3}
@@ -417,13 +417,13 @@ StateMachine:
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
-      first: {fileID: 110283130}
-      second:
-      - {fileID: 110154558}
-    data:
       first: {fileID: 110208766}
       second:
       - {fileID: 110142796}
+    data:
+      first: {fileID: 110283130}
+      second:
+      - {fileID: 110154558}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: 50, y: 20, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
@@ -442,13 +442,13 @@ StateMachine:
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
-      first: {fileID: 110289670}
-      second:
-      - {fileID: 110171774}
-    data:
       first: {fileID: 110241344}
       second:
       - {fileID: 110132658}
+    data:
+      first: {fileID: 110289670}
+      second:
+      - {fileID: 110171774}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: 50, y: 20, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}

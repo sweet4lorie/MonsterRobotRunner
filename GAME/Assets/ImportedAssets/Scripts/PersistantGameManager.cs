@@ -20,6 +20,7 @@ public class PersistantGameManager : MonoBehaviour {
 	
 	public void characterButton (string character) {
 		characterSelectedString = character;
+		Debug.Log (characterSelectedString);
 	}
 	
 	public void setOtherPlayer()

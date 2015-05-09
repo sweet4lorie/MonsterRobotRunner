@@ -8,7 +8,7 @@ public class Speedboost : MonoBehaviour {
 	private string player2Label = "Player2";
 	private string groundTag = "Floor";
 
-	private float speed;
+	//private float speed;
 	private RaycastHit hit;
 	public string collide;
 	public float height;
@@ -16,7 +16,7 @@ public class Speedboost : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		speed = -0.1f;
+		//speed = -0.1f;
 		height = 0.0f;
 		checker = false;
 	}

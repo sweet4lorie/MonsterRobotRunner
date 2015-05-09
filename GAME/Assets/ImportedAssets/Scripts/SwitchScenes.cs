@@ -7,7 +7,6 @@ public class SwitchScenes : MonoBehaviour {
 	private GameObject player2;
 	private GameObject controller;
 	private PersistantGameManager gameManager;
-	private GameObject icon;
 	private string characterString;
 
 	// Use this for initialization
@@ -19,11 +18,9 @@ public class SwitchScenes : MonoBehaviour {
 		gameManager = controller.GetComponent<PersistantGameManager>();
 		player1 = GameObject.Find (gameManager.thisPlayer);
 		player2 = GameObject.Find ("Player2(Clone)");
-		icon = GameObject.Find ("ICON");
 		Destroy (player1);
 		Destroy (player2);
 		Destroy (controller);
-		Destroy (icon);
 		PhotonNetwork.LeaveRoom ();
 		PhotonNetwork.Disconnect ();
 		Application.LoadLevel (nextScene);

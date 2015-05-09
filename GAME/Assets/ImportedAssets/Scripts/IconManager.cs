@@ -6,16 +6,12 @@ public class IconManager : MonoBehaviour {
 	
 	private PersistantGameManager gameManager;
 	private string character;
-
-	void Awake() {
-		DontDestroyOnLoad(gameObject);
-	}
-		
+	
 	// Use this for initialization
 	void Start () {
 		gameManager = GameObject.Find ("GameController").GetComponent<PersistantGameManager>();
 		character = gameManager.characterSelectedString;
-		
+
 		Sprite newSprite = Resources.Load <Sprite>("Icon_" + character);
 		if (newSprite){
 			gameObject.GetComponent<Image> ().sprite = newSprite;

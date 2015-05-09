@@ -10,8 +10,11 @@ TagManager:
   - Selection_H_Monster
   - Selection_J_Robot
   - Pointer
-  - SelectionChar3
+  - MultViewButtons
   - PullJoint
+  - SingleViewButtons
+  - SingleViewModels
+  - 
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

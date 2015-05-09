@@ -55,7 +55,7 @@ public class PlayerMove : MonoBehaviour {
 		Dictionary<string, KeyCode> player1 = new Dictionary<string, KeyCode>();
 		Dictionary<string, KeyCode> player2 = new Dictionary<string, KeyCode>();
 		
-		player1.Add ("jump", KeyCode.Space);
+		player1.Add ("jump", KeyCode.Z);
 		player1.Add ("back", KeyCode.A);
 		player1.Add ("front", KeyCode.D);
 		keyControls.Add (player1Label, player1);

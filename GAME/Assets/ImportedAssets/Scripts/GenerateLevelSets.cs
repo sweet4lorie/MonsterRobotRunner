@@ -24,23 +24,23 @@ public class GenerateLevelSets : MonoBehaviour {
 	public int random;
 	public int difficulty;
 	public float speed;
-	private GameObject player;
+	//private GameObject player;
 
 	public float normalSpeed = 4.8f;
 	public float fastSpeed = 3f;
-	private NetworkView nView;
+	//private NetworkView nView;
 
 	// Use this for initialization
 	void Start () {
 		//where each random set spawns at
-		spawnlocation = new Vector3 (31, 1, 0);
+		spawnlocation = new Vector3 (29, 1, 0);
 		timer = 1000;
 		timermax = 1000;
 		difficulty = 1;
 		random = 3;
 		speed = normalSpeed;
-		nView = GetComponent<NetworkView> ();
-		player = GameObject.Find ("Player1(Clone)");
+		//nView = GetComponent<NetworkView> ();
+		//player = GameObject.Find ("Player1(Clone)");
 	}
 
 	//Synchronize random number generator throughout network
